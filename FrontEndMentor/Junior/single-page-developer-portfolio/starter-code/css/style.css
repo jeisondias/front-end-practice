@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img, picture {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 10rem !important;
+}
+
+:root {
+  --green: hsl(153deg, 71%, 59%);
+  --black: hsl(0deg, 0%, 8%);
+  --dark-grey: hsl(0deg, 0%, 14%);
+  --grey: hsl(0deg, 0%, 85%);
+  --white: hsl(0deg, 0%, 100%);
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.6rem;
+}
+
+h1, h2, h3 {
+  color: var(--white);
+}
+
+p, span {
+  color: var(--grey);
+}
+
+h1 {
+  font-size: 8.8rem;
+  letter-spacing: -0.2rem;
+  line-height: 8.8rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+  letter-spacing: -0.15rem;
+  line-height: 5.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+body {
+  background-color: var(--black);
+}
+
+.logo {
+  font-size: 3.2rem;
+  letter-spacing: -0.44rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+textarea, input {
+  width: 100%;
+  min-height: 4.3em;
+  padding: 0.5em 2.4em 1.7em;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--white);
+  color: white;
+  resize: none;
+  font-weight: 500;
+  line-height: -0.2rem;
+  line-height: 2.6rem;
+}
+
+textarea {
+  min-height: 10em;
+  resize: none;
+}/*# sourceMappingURL=style.css.map */

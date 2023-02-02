@@ -1,0 +1,40 @@
+@import 'partials/global';
+@import 'partials/colors';
+@import 'partials/typography';
+@import 'partials/buttons';
+@import 'partials/icons';
+
+body {
+    background-color: var(--black);
+}
+
+.logo {
+    font-size: 3.2rem;
+    letter-spacing: -.44rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+
+// Form
+
+textarea, input {
+    width: 100%;
+    min-height: 4.3em;
+    padding: .5em 2.4em 1.7em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    color: white;
+    resize: none;
+
+    font-weight: 500;
+    line-height: -.2rem;
+    line-height: 2.6rem;
+}
+
+
+textarea {
+    min-height: 10em;
+    resize: none;   
+}
