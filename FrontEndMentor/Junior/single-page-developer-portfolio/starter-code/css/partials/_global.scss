@@ -24,11 +24,27 @@ a {
 }
 
 .wrapper {
+    width: 100%;
     max-width: 1150px;
     margin: 0 auto;
+    padding: 0 1.6em;
 }
 
 section {
     margin-bottom: 10rem !important; 
 }
 
+.hide-mobile {
+    display: none;
+}
+
+// Tablet
+@media only screen and (min-width: 768px) {
+    .show-mobile {
+        display: none;
+    }
+
+    .hide-mobile {
+        display: inherit;
+    }
+}
