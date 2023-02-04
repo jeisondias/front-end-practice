@@ -1,0 +1,17 @@
+.btn {
+    transition: .3s ease;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: var(--green);
+        border-bottom: 2px solid var(--green);
+        margin-top: 1em;
+        display: block;
+    }
+
+    &:hover {
+        color: var(--green);
+    }
+}

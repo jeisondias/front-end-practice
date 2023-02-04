@@ -74,10 +74,29 @@ nav {
         height: 129px;
         background-repeat: no-repeat;
         position: absolute;
-        left: 80%;
+        left: 83%;
         top: 335px;
     }
+
+    .banner {
+        margin-top: 4em;
+
+        .leftCol {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.4em;
+            text-align: center;
+
+            span {
+                border-bottom: 4px solid var(--green);
+            }
+        }
+    
+    }
 }
+
+
 
 
 

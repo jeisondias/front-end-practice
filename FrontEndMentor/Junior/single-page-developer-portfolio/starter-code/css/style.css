@@ -7,6 +7,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 img, picture {
@@ -114,6 +115,23 @@ p {
     line-height: 2.8rem;
   }
 }
+.btn {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.btn::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--green);
+  border-bottom: 2px solid var(--green);
+  margin-top: 1em;
+  display: block;
+}
+.btn:hover {
+  color: var(--green);
+}
+
 body {
   background-color: var(--black);
 }
@@ -192,8 +210,28 @@ nav .social-media li {
   height: 129px;
   background-repeat: no-repeat;
   position: absolute;
-  left: 80%;
+  left: 83%;
   top: 335px;
+}
+.hero .banner {
+  margin-top: 4em;
+}
+.hero .banner .leftCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.4em;
+  text-align: center;
+}
+.hero .banner .leftCol span {
+  border-bottom: 4px solid var(--green);
 }
 
 textarea, input {
