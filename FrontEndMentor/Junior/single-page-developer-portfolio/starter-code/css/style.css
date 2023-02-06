@@ -182,6 +182,7 @@ nav .social-media li {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  overflow: hidden;
 }
 .hero .profile-picture-mobile {
   width: 174px;
@@ -247,6 +248,73 @@ nav .social-media li {
 }
 .skills ul li {
   text-align: center;
+}
+
+.projects .projects-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4em;
+}
+.projects .project-list > ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4em;
+}
+.projects .project-list .img-project {
+  max-width: 345px;
+  width: 100%;
+  height: 253px;
+  margin-bottom: 2em;
+}
+.projects .project-list ul li:nth-child(1) .img-project {
+  background-image: url("../assets/images/thumbnail-project-1-large.webp");
+  background-size: cover;
+}
+.projects .project-list ul li:nth-child(2) .img-project {
+  background-image: url("../assets/images/thumbnail-project-2-large.webp");
+  background-size: cover;
+}
+.projects .project-list ul li:nth-child(3) .img-project {
+  background-image: url("../assets/images/thumbnail-project-3-large.webp");
+  background-size: cover;
+}
+.projects .project-list ul li:nth-child(4) .img-project {
+  background-image: url("../assets/images/thumbnail-project-4-large.webp");
+  background-size: cover;
+}
+.projects .project-list ul li:nth-child(5) .img-project {
+  background-image: url("../assets/images/thumbnail-project-5-large.webp");
+  background-size: cover;
+}
+.projects .project-list ul li:nth-child(6) .img-project {
+  background-image: url("../assets/images/thumbnail-project-6-large.webp");
+  background-size: cover;
+}
+.projects .project-list .tech-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--grey);
+  gap: 1.8em;
+  margin-top: 0.8em;
+}
+.projects .project-list .view-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3em;
+  margin-top: 1.8em;
 }
 
 textarea, input {
