@@ -446,6 +446,7 @@ textarea {
   }
   .skills {
     padding: 5.2em 3.2em;
+    border-bottom: unset;
   }
   .skills ul {
     grid-template-columns: repeat(2, 1fr);
@@ -453,6 +454,9 @@ textarea {
   }
   .skills ul li {
     text-align: unset;
+  }
+  .skills ul li h2 {
+    margin-bottom: 0.2em;
   }
   .projects .projects-top {
     padding: 0em 1.4em;
