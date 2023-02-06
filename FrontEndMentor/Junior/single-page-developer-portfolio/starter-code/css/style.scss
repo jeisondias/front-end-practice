@@ -114,8 +114,7 @@ nav {
     }
 
     &.wrapper {
-        padding: 4em 0em;
-        border-bottom: 1px solid var(--white);
+        padding: 0em 1.6em;
     }
 
     ul {
@@ -123,6 +122,11 @@ nav {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
         gap: 2em;
+
+        padding: 1.8em 0em;
+
+        border-top: 1px solid var(--white);
+        border-bottom: 1px solid var(--white);
 
         li {
             text-align: center;
@@ -377,7 +381,10 @@ textarea {
 
         ul {
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);    
+            border-top: unset;
+            border-bottom: unset;
+            padding: unset;
 
             li {
                 text-align: unset;

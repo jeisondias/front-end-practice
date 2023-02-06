@@ -272,14 +272,16 @@ nav .social-media li {
   top: 90%;
 }
 .skills.wrapper {
-  padding: 4em 0em;
-  border-bottom: 1px solid var(--white);
+  padding: 0em 1.6em;
 }
 .skills ul {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
   gap: 2em;
+  padding: 1.8em 0em;
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
 }
 .skills ul li {
   text-align: center;
@@ -517,6 +519,9 @@ textarea {
   .skills ul {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    border-top: unset;
+    border-bottom: unset;
+    padding: unset;
   }
   .skills ul li {
     text-align: unset;
