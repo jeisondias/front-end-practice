@@ -143,7 +143,7 @@ nav {
         }
 
         .img-project {
-            max-width: 345px;
+            min-width: 345px;
             width: 100%;
             height: 253px;
             margin-bottom: 2em;
@@ -298,6 +298,23 @@ textarea {
 
 
     // Projects
+
+    .projects {
+
+        .projects-top {
+            padding: 0em 1.4em;
+        }
+
+        .project-list {
+            align-items: unset;
+            padding: 0em 1.4em;
+
+            & > ul {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+        }
+    }
 
 
     // Footer

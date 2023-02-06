@@ -302,7 +302,7 @@ nav .social-media li {
   gap: 4em;
 }
 .projects .project-list .img-project {
-  max-width: 345px;
+  min-width: 345px;
   width: 100%;
   height: 253px;
   margin-bottom: 2em;
@@ -438,6 +438,19 @@ textarea {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .projects .projects-top {
+    padding: 0em 1.4em;
+  }
+  .projects .project-list {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    padding: 0em 1.4em;
+  }
+  .projects .project-list > ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
   footer .contact {
     padding: 6em 8em 8.7em;
