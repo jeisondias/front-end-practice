@@ -296,6 +296,20 @@ textarea {
 
     // Skills
 
+    .skills {
+        padding: 5.2em 3.2em;
+        
+        ul {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+
+            li {
+                text-align: unset;
+            }
+        }
+        
+    }
+
 
     // Projects
 

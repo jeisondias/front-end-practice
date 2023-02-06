@@ -101,11 +101,9 @@ p {
   text-transform: uppercase;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 768px) {
   h1 {
-    font-size: 8.8rem;
-    letter-spacing: -0.2rem;
-    line-height: 8.8rem;
+    font-size: 7.2rem;
   }
   h2 {
     font-size: 4.8rem;
@@ -119,6 +117,13 @@ p {
   p {
     font-size: 1.8rem;
     line-height: 2.8rem;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  h1 {
+    font-size: 8.8rem;
+    letter-spacing: -0.2rem;
+    line-height: 8.8rem;
   }
 }
 button {
@@ -438,6 +443,16 @@ textarea {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .skills {
+    padding: 5.2em 3.2em;
+  }
+  .skills ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .skills ul li {
+    text-align: unset;
   }
   .projects .projects-top {
     padding: 0em 1.4em;
