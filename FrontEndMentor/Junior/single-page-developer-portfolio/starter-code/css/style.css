@@ -115,10 +115,20 @@ p {
     line-height: 2.8rem;
   }
 }
+button {
+  background: none;
+  border: none;
+  color: var(--white);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button,
 .btn {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
+button::after,
 .btn::after {
   content: "";
   width: 100%;
@@ -128,6 +138,7 @@ p {
   margin-top: 1em;
   display: block;
 }
+button:hover,
 .btn:hover {
   color: var(--green);
 }
@@ -317,6 +328,51 @@ nav .social-media li {
   margin-top: 1.8em;
 }
 
+footer {
+  background-color: var(--dark-grey);
+}
+footer .wrapper {
+  padding: 0 0.9em 3em;
+}
+footer .contact {
+  padding: 6em 0em 8.7em;
+}
+footer .contact .leftCol {
+  text-align: center;
+}
+footer .contact .leftCol h1 {
+  margin-bottom: 1em;
+}
+footer .contact .leftCol p {
+  margin-bottom: 4em;
+}
+footer .contact .rightCol form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .contact .rightCol button {
+  width: 142px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3.2em;
+  font-size: 1.6rem;
+}
+
 textarea, input {
   width: 100%;
   min-height: 4.3em;
@@ -326,6 +382,7 @@ textarea, input {
   border-bottom: 1px solid var(--white);
   color: white;
   resize: none;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: -0.2rem;
   line-height: 2.6rem;

@@ -190,6 +190,51 @@ nav {
 }
 
 
+// Footer
+
+footer {
+
+    background-color: var(--dark-grey);
+
+    .wrapper {
+        padding: 0 .9em 3em;
+    }
+
+    .contact {
+        padding: 6em 0em 8.7em;
+
+        .leftCol {
+            text-align: center;
+
+            h1 {
+                margin-bottom: 1em;
+            }
+
+            p {
+                margin-bottom: 4em;
+            }
+        }
+
+        .rightCol {
+
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            button {
+                width: 142px;
+                display: flex;
+                flex-direction: column;
+                align-self: flex-end;
+                align-items: center;
+                margin-top: 3.2em;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
 // Form
 
 textarea, input {
@@ -202,6 +247,7 @@ textarea, input {
     color: white;
     resize: none;
 
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: -.2rem;
     line-height: 2.6rem;
