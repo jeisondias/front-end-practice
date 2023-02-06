@@ -41,6 +41,12 @@ section {
 
 // Tablet
 @media only screen and (min-width: 768px) {
+
+    nav {
+        flex-direction: row;
+
+    }
+
     .show-mobile {
         display: none;
     }

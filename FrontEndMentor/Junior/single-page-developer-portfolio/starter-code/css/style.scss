@@ -281,3 +281,37 @@ textarea {
     min-height: 10em;
     resize: none;   
 }
+
+@media only screen and (min-width: 768px) {
+
+    // Nav
+    nav {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    // Nav
+
+
+    // Skills
+
+
+    // Projects
+
+
+    // Footer
+
+    footer {
+
+        .contact {
+            padding: 6em 8em 8.7em;
+
+            &::before {
+                bottom: 30px;
+                left: -350px;
+            }
+        }
+    }
+
+}
