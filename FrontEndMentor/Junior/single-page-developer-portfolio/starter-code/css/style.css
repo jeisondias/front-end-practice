@@ -561,4 +561,12 @@ textarea {
   .hero .banner .rightCol::before {
     right: -16px;
   }
+  .skills ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    -webkit-column-gap: 9em;
+       -moz-column-gap: 9em;
+            column-gap: 9em;
+    row-gap: 5.8em;
+  }
 }/*# sourceMappingURL=style.css.map */

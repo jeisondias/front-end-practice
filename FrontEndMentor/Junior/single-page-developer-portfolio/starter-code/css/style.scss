@@ -459,6 +459,18 @@ textarea {
         }
     }
 
+    // Skills
+
+    .skills {
+
+        ul {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 9em;
+            row-gap: 5.8em;
+        }
+    }
+
     
 
 }
