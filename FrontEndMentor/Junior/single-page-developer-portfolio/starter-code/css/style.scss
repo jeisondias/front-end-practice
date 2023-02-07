@@ -471,6 +471,28 @@ textarea {
         }
     }
 
-    
+    // Contact
 
+    footer {
+        .contact {
+            display: flex;
+            flex-direction: row;
+            gap: 10em;
+            padding: 6em 1em 5.7em;
+
+            &::before {
+                bottom: 54px;
+            }
+    
+            .leftCol {
+                flex: 2;
+                text-align: left;
+            }
+    
+            .rightCol {
+                min-width: 445px;
+                flex: 1;
+            }
+        }
+    }
 }
