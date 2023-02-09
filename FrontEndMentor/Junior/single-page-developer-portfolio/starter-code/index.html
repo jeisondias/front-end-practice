@@ -177,8 +177,12 @@
           </div>
           <div class="rightCol">
             <form>
-              <input type="text" name="name" placeholder="Name" class="uppercase">
-              <input type="email" name="email" placeholder="Email" class="uppercase">
+              <div class="input-container" data-error="Sorry, invalid format here">
+                <input type="text" name="name" placeholder="Name" class="uppercase" pattern="[A-Za-z ]{1,32}" required>
+              </div>
+              <div class="input-container" data-error="Sorry, invalid format here">
+                <input type="email" name="email" placeholder="Email" class="uppercase" required/>
+              </div>
               <textarea placeholder="Message" class="uppercase"></textarea>
               <button class="uppercase btn">SEND MESSAGE</button>
             </form>
