@@ -196,6 +196,10 @@ nav .social-media {
 nav .social-media li {
   cursor: pointer;
 }
+nav .social-media li a svg:hover {
+  -webkit-filter: brightness(0) saturate(100%) invert(97%) sepia(56%) saturate(1149%) hue-rotate(70deg) brightness(89%) contrast(99%);
+          filter: brightness(0) saturate(100%) invert(97%) sepia(56%) saturate(1149%) hue-rotate(70deg) brightness(89%) contrast(99%);
+}
 
 .hero {
   display: -webkit-box;

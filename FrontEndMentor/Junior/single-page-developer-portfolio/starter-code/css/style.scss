@@ -37,6 +37,10 @@ nav {
 
         li {
             cursor: pointer;
+
+            a svg:hover {
+                filter: brightness(0) saturate(100%) invert(97%) sepia(56%) saturate(1149%) hue-rotate(70deg) brightness(89%) contrast(99%);
+            }
         }
     }
 }
@@ -505,6 +509,8 @@ textarea {
             row-gap: 5.8em;
         }
     }
+
+    // Projects
 
     // Contact
 
