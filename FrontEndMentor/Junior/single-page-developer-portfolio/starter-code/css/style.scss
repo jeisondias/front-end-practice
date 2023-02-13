@@ -512,6 +512,33 @@ textarea {
 
     // Projects
 
+    .project-list {
+        .img-project {
+
+            &:hover > .desktop-view-links {
+                display: flex;
+            }
+
+            .desktop-view-links {
+                background-color: hsl(0deg, 0%, 8%, 70%);
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                display: none;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 3rem;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
     // Contact
 
     footer {
