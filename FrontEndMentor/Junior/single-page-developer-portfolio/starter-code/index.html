@@ -224,7 +224,8 @@
                 <input type="text" name="name" placeholder="Name" class="uppercase" pattern="[A-Za-z ]{1,32}" required>
               </div>
               <div class="input-container" data-error="Sorry, invalid format here">
-                <input type="email" name="email" placeholder="Email" class="uppercase" required/>
+                <input type="email" name="email" id="email-field" placeholder="Email" class="uppercase" required/>
+                <span id="error">Sorry, invalid format here</span>
               </div>
               <textarea placeholder="Message" class="uppercase"></textarea>
               <button class="uppercase btn">SEND MESSAGE</button>
@@ -251,5 +252,6 @@
       </div>
     </footer>
   </main>
+  <script src="scripts/app.js"></script>
 </body>
 </html>

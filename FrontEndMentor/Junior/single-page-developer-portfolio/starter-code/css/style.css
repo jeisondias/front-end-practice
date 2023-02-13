@@ -473,7 +473,7 @@ textarea, input {
 }
 
 .display-block {
-  display: block;
+  display: block !important;
 }
 
 input:focus,
@@ -507,11 +507,10 @@ input:focus:invalid {
   border-color: var(--red);
 }
 
-input:focus:invalid::after {
-  content: "test";
+#error {
   font-size: 1.1rem;
   color: var(--red);
-  display: block;
+  display: none;
   text-align: right;
 }
 
