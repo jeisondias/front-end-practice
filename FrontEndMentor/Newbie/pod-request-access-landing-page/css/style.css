@@ -53,7 +53,7 @@ body {
 h1 {
   font-size: 2.6rem;
   font-weight: 300;
-  line-height: 2.6rem;
+  line-height: 2.9rem;
   text-transform: uppercase;
 }
 
@@ -133,4 +133,98 @@ section .leftContent {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+section .leftContent h1 {
+  color: var(--white);
+  margin-bottom: 1.6em;
+}
+section .leftContent h1 span {
+  color: var(--primary-green);
+}
+section .leftContent p {
+  color: var(--lighter-blue);
+  margin-bottom: 3.5em;
+}
+section .leftContent form, section .leftContent .btn {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+section .leftContent form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+section .leftContent form input[type=email] {
+  background-color: var(--form-blue);
+  border: none;
+  height: 46px;
+  padding: 0.9rem 0.2rem 0.9rem 3.2rem;
+  border-radius: 28px;
+  color: var(--white);
+  font-weight: bold;
+}
+section .leftContent form input[type=email]:focus {
+  outline: none;
+}
+section .leftContent form .btn {
+  display: block;
+  height: 46px;
+  background-color: var(--primary-green);
+  color: var(--bg-blue);
+  text-decoration: none;
+  border-radius: 28px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  padding: 1em 0;
+  margin-top: 1.6rem;
+}
+section .leftContent form .btn:hover {
+  background-color: #B3FFE2;
+}
+section .leftContent form .error {
+  margin-top: 0.8rem;
+  color: #FB3E3E;
+  text-align: left;
+  padding-left: 3.2rem;
+}
+section .leftContent form ::-webkit-input-placeholder {
+  color: var(--white);
+  opacity: 0.5;
+  font-weight: bold;
+}
+section .leftContent form ::-moz-placeholder {
+  color: var(--white);
+  opacity: 0.5;
+  font-weight: bold;
+}
+section .leftContent form :-ms-input-placeholder {
+  color: var(--white);
+  opacity: 0.5;
+  font-weight: bold;
+}
+section .leftContent form ::-ms-input-placeholder {
+  color: var(--white);
+  opacity: 0.5;
+  font-weight: bold;
+}
+section .leftContent form ::placeholder {
+  color: var(--white);
+  opacity: 0.5;
+  font-weight: bold;
+}
+section .leftContent .players {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.3em;
+  margin-bottom: 4.8em;
 }/*# sourceMappingURL=style.css.map */
