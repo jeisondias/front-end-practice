@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img, picture {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1275px;
+}
+
+@media only screen and (min-width: 1100px) {
+  .wrapper {
+    margin: 13em 0 13em 16.5em;
+  }
+}
+body {
+  font-family: "Chivo", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 300;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+}
+
+a, form {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 4.8rem;
+    font-weight: 300;
+    line-height: 5.6rem;
+  }
+  p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+  }
+  a, form {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  h1 {
+    font-size: 5.2rem;
+    font-weight: 300;
+    line-height: 6.2rem;
+  }
+}
+:root {
+  --primary-green: hsl(157deg, 74%, 62%);
+  --lighter-blue: hsl(225deg, 40%, 83%);
+  --form-blue: hsl(225deg, 26%, 23%);
+  --bg-blue: hsl(224deg, 35%, 11%);
+  --white: hsl(0deg, 0%, 100%);
+  --dkr-blue: hsl(225deg, 21%, 45%);
+}/*# sourceMappingURL=style.css.map */
