@@ -8,6 +8,10 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    background-color: var(--bg-blue);
+}
+
 
 img, picture {
     display: block;
@@ -21,12 +25,21 @@ ul {
 
 .wrapper {
     max-width: 1275px;
+    min-height: 667px;
+    padding: 6.2em 2.4em 9.4em;
+}
+
+.hide-tablet {
+    display: unset;
 }
 
 //Tablet
 
 @media only screen and (min-width: 768px) {
 
+    .hide-tablet {
+        display: none;
+    }
 }
 
 // Desktop
