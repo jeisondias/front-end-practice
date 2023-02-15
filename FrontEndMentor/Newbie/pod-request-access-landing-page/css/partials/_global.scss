@@ -44,9 +44,18 @@ ul {
 
 // Desktop
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1100px) and (max-width: 1499px) {
     .wrapper {
         margin: 13em 0 13em 16.5em;
+    }
+
+}
+
+// Desktop Wider
+
+@media only screen and (min-width: 1500px) {
+    .wrapper {
+        margin: 13em auto;
     }
 
 }
