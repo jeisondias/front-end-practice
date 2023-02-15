@@ -135,6 +135,56 @@ section {
         .logo {
             margin: 0em 0em 15.2em 3.9em;
         }
+
+        section {
+            padding-top: 9.3em;
+            background: var(--bg-blue);
+
+            .leftContent {
+                text-align: left;
+                align-items: flex-start;
+
+                h1 {
+                    margin-bottom: 3.1rem;
+                }
+
+                p {
+                    margin-bottom: 4rem;
+                }
+
+                form {
+                    flex-direction: row;
+                    position: relative;
+
+                    input[type=email] {
+                        min-width: 475px;
+                        height: 56px;
+                        position: absolute;
+                    }
+
+                    .btn {
+                        min-width: 162px;
+                        height: 46px;
+                        position: relative;
+                        left: 303px;
+                        margin-top: 0;
+                        margin: .4em;
+                        text-align: center;
+                    }
+
+                    .error {
+                        position: absolute;
+                        bottom: -31px;
+                    }
+                }
+
+                .players {
+                    order: 2;
+                    margin-top: 9.3em;
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 
 }
