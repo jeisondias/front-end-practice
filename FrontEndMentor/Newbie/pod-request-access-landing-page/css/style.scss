@@ -132,6 +132,18 @@ section {
             z-index: -1;
         }
 
+        &::after {
+            content: '';
+            background: url('../assets/desktop/bg-pattern-dots.svg') no-repeat;
+            min-width: 232px;
+            height: 104px;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 3.9em;
+            z-index: -1;
+        }
+
         .logo {
             margin: 0em 0em 15.2em 3.9em;
         }
@@ -150,6 +162,7 @@ section {
 
                 p {
                     margin-bottom: 4rem;
+                    padding-right: 23rem;
                 }
 
                 form {

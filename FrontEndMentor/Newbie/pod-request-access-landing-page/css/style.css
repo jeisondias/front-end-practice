@@ -249,6 +249,17 @@ section .leftContent .players {
     right: 0;
     z-index: -1;
   }
+  main::after {
+    content: "";
+    background: url("../assets/desktop/bg-pattern-dots.svg") no-repeat;
+    min-width: 232px;
+    height: 104px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 3.9em;
+    z-index: -1;
+  }
   main .logo {
     margin: 0em 0em 15.2em 3.9em;
   }
@@ -267,6 +278,7 @@ section .leftContent .players {
   }
   main section .leftContent p {
     margin-bottom: 4rem;
+    padding-right: 23rem;
   }
   main section .leftContent form {
     -webkit-box-orient: horizontal;
