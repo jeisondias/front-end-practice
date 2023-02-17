@@ -28,7 +28,7 @@ ul {
 .wrapper {
   max-width: 1275px;
   min-height: 667px;
-  padding: 6.2em 2.4em 9.4em;
+  margin: 6.2em 2.4em 9.4em;
 }
 
 .hide-tablet {
@@ -38,11 +38,6 @@ ul {
 @media only screen and (min-width: 768px) {
   .hide-tablet {
     display: none;
-  }
-}
-@media only screen and (min-width: 1100px) and (max-width: 1499px) {
-  .wrapper {
-    margin: 13em 0 13em 16.5em;
   }
 }
 @media only screen and (min-width: 1500px) {
@@ -236,7 +231,7 @@ section .leftContent .players {
 
 @media only screen and (min-width: 768px) {
   .wrapper {
-    padding: 5em 9.4em 25.7em 3.9em;
+    margin: 5em 9.4em 25.7em 3.9em;
   }
   main::before {
     content: "";
@@ -252,7 +247,7 @@ section .leftContent .players {
   main::after {
     content: "";
     background: url("../assets/desktop/bg-pattern-dots.svg") no-repeat;
-    min-width: 232px;
+    width: 232px;
     height: 104px;
     display: block;
     position: absolute;
@@ -314,7 +309,57 @@ section .leftContent .players {
   }
 }
 @media only screen and (min-width: 1100px) {
+  .wrapper {
+    margin: 10.2em 0em 13em 16.5em;
+    position: relative;
+  }
   main::before {
-    display: none;
+    content: "";
+    background: url("../assets/desktop/image-host.jpg") no-repeat;
+    min-width: 888px;
+    height: 654px;
+    top: 3em;
+    background-size: cover;
+  }
+  main::after {
+    content: "";
+    background: url("../assets/desktop/bg-pattern-dots.svg") no-repeat;
+    bottom: -48px;
+    left: unset;
+    right: 0;
+    z-index: -1;
+  }
+  main section {
+    max-width: 723px;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    padding-top: 8.8em;
+    padding-right: 5.8em;
+    padding: 7.8em 5.8em 0 0;
+  }
+  main section .leftContent h1 {
+    margin-bottom: 2.4rem;
+  }
+  main section .leftContent p {
+    padding-right: 21rem;
+  }
+  main section .leftContent .players {
+    margin-top: 6.4em;
+  }
+  main .logo {
+    margin: 0em 0em 13em 0em;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .wrapper {
+    position: relative;
+  }
+  main::before {
+    content: "";
+    background: url("../assets/desktop/image-host.jpg") no-repeat;
+    min-width: 888px;
+    height: 640px;
+    top: 4em;
   }
 }/*# sourceMappingURL=style.css.map */
