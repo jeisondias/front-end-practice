@@ -29,6 +29,8 @@ ul {
   max-width: 1275px;
   min-height: 667px;
   margin: 6.2em 2.4em 9.4em;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .hide-tablet {
@@ -38,11 +40,6 @@ ul {
 @media only screen and (min-width: 768px) {
   .hide-tablet {
     display: none;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  .wrapper {
-    margin: 13em auto;
   }
 }
 body {

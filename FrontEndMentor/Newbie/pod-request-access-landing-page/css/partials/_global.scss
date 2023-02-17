@@ -27,6 +27,7 @@ ul {
     max-width: 1275px;
     min-height: 667px;
     margin: 6.2em 2.4em 9.4em;
+    transition: .3s ease;
 }
 
 .hide-tablet {
@@ -40,13 +41,4 @@ ul {
     .hide-tablet {
         display: none;
     }
-}
-
-// Desktop Wider
-
-@media only screen and (min-width: 1500px) {
-    .wrapper {
-        margin: 13em auto;
-    }
-
 }
