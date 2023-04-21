@@ -87,3 +87,19 @@ body {
         }
     }
 }
+
+.err {
+    margin-top: .8rem;
+    color: var(--lightred) !important;    
+
+    p {
+        font-weight: 400;
+        font-style: italic;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+.err + input[type=number] {
+    border: 1px solid var(--lightred);
+}

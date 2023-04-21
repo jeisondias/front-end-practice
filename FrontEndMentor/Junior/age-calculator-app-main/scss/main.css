@@ -1,6 +1,6 @@
 :root {
   --purple: hsl(259, 100%, 65%);
-  --light-red: hsl(0, 100%, 67%);
+  --lightred: hsl(0, 100%, 67%);
   --white: hsl(0, 0%, 100%);
   --offwhite: hsl(0, 0%, 94%);
   --lightgrey: hsl(0, 0%, 86%);
@@ -122,4 +122,19 @@ body {
 }
 .ageResult ul li span {
   color: var(--purple);
+}
+
+.err {
+  margin-top: 0.8rem;
+  color: var(--lightred) !important;
+}
+.err p {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.err + input[type=number] {
+  border: 1px solid var(--lightred);
 }/*# sourceMappingURL=main.css.map */
