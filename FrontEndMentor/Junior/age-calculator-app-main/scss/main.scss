@@ -72,3 +72,18 @@ body {
         }
     }
 }
+
+.ageResult {
+    ul {
+        li {
+            font-size: 5.6rem;
+            font-weight: 800;
+            font-style: italic;
+            letter-spacing: -1px;
+
+            span {
+                color: var(--purple);
+            }
+        }
+    }
+}

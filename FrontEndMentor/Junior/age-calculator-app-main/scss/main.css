@@ -112,4 +112,14 @@ body {
 }
 .arrow-line .arrow img {
   width: 24px;
+}
+
+.ageResult ul li {
+  font-size: 5.6rem;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: -1px;
+}
+.ageResult ul li span {
+  color: var(--purple);
 }/*# sourceMappingURL=main.css.map */
