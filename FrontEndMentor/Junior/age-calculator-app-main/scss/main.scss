@@ -6,3 +6,38 @@
 body {
     background-color: var(--lightgrey);
 }
+
+.dateInput {
+
+    form {
+
+        ul {
+            display: flex;
+            gap: 1.6rem;
+
+            li {
+                width: 8.7rem;
+
+                label {
+                    color: var(--smokeygrey);
+                    font-weight: 700;
+                    letter-spacing: 2.5px;
+                    text-transform: uppercase;
+                }
+
+                input {
+                    margin-top: .4rem;
+                    width: 8.7rem;
+                    height: 5.4rem;
+                    padding: 1.2rem 1.6rem;
+                    border-radius: 8%;
+                    border: 1px solid var(--offwhite);
+
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: var(--offblack);
+                }
+            }
+        }
+    }
+}

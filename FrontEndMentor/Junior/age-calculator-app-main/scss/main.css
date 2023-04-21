@@ -17,9 +17,20 @@
   list-style: none;
 }
 
-html {
+html,
+input {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .container {
@@ -37,4 +48,31 @@ article {
 
 body {
   background-color: var(--lightgrey);
+}
+
+.dateInput form ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.6rem;
+}
+.dateInput form ul li {
+  width: 8.7rem;
+}
+.dateInput form ul li label {
+  color: var(--smokeygrey);
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+.dateInput form ul li input {
+  margin-top: 0.4rem;
+  width: 8.7rem;
+  height: 5.4rem;
+  padding: 1.2rem 1.6rem;
+  border-radius: 8%;
+  border: 1px solid var(--offwhite);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--offblack);
 }/*# sourceMappingURL=main.css.map */

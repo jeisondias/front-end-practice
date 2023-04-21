@@ -6,7 +6,19 @@
     list-style: none;
 }
 
-html {
+html,
+input {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    margin: 0;
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
