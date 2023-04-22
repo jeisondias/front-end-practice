@@ -21,47 +21,80 @@ let dayInputData = 0;
 let monthInputData = 0;
 let yearInputData = 0;
 
+// Error Fields
+let dayErr = document.querySelector('.dayErr');
+let monthErr = document.querySelector('.monthErr');
+let yearErr = document.querySelector('.yearErr');
+
+// Labels
+let lbday = document.querySelector('.lbday');
+let lbmonth = document.querySelector('.lbmonth');
+let lbyear = document.querySelector('.lbyear');
+
+// Event Listeners
+
 dayInput.addEventListener('keyup', getYMD);
 monthInput.addEventListener('keyup', getYMD);
 yearInput.addEventListener('keyup', getYMD);
 
 // Check if the date is correct
 function checkDay(day) {
-    parseInt(day);
     if(day <= 0 || day > 31) {
-        console.log('This is not a valid date')
+        return false;
     } else {
-        return parseInt(day);
+        dayInputData = day;
+        return true;
     }
 }
 
 function checkMonth(month) {
-    parseInt(month);
     if(month <= 0 || month > 12) {
-        console.log('This is not a valid Month')
+        return false;
     } else {
-        return parseInt(month);
+        monthInputData = month;
+        return true;
     }
 }
 
 function checkYear(year) {
-    parseInt(year);
     if(year <= 0 || year > cYear) {
-        console.log('This is not a valid Year')
+        return false;
     } else {
-        return parseInt(year);
+        yearInputData = year;
+        return true;
     }
 }
 
 
 function getYMD() {
+    let validDay = parseInt(dayInput.value);
+    if (!checkDay(validDay)) {
+        displayErrorMessage(dayInput, dayInputData, dayErr, lbday, 'Must be a valid day');
+    } else {
+        removeErrorMessage(dayInput, dayInputData, dayErr, lbday);
+    }
 
-    dayInputData = checkDay(dayInput.value);
-    monthInputData = checkMonth(monthInput.value);
-    yearInputData = checkYear(yearInput.value);
+    let validMonth = parseInt(monthInput.value)
+    if (!checkMonth(validMonth)) {
+        displayErrorMessage(monthInput, monthInputData, monthErr, lbmonth, 'Must be a valid month');
+    } else {
+        removeErrorMessage(monthInput, monthInputData, monthErr, lbmonth);
+    }
 
+    let validYear = parseInt(yearInput.value);
+    if (!checkYear(validYear)) {
+        displayErrorMessage(yearInput, yearInputData, yearErr, lbyear, 'Must be a valid year');
+    } else {
+        removeErrorMessage(yearInput, yearInputData, yearErr, lbyear);
+    }
     
-    if (dayInputData > 0 && monthInputData > 0 && parseInt(yearInputData) < cYear && parseInt(yearInputData) > 0) {
+    if (dayInput.value == '' || monthInput.value == '' || yearInput.value == '') {
+        yearsText.innerHTML = '--';
+        monthsText.innerHTML = '--';
+        daysText.innerHTML = '--';
+    } 
+    
+    else if (checkDay(dayInput.value) > 0 && checkMonth(monthInput.value) > 0 && checkYear(yearInput.value) < cYear && checkYear(yearInput.value) > 0) {
         let years = negativeDate(cYear - yearInputData);
         yearsText.innerHTML = years;
 
@@ -70,9 +103,6 @@ function getYMD() {
 
         let days = negativeDate((cDay - parseInt(dayInputData)));
         daysText.innerHTML = days;
-
-    } else {
-        console.log('Tem Coisa errada!')
     }
 }
 
@@ -82,4 +112,18 @@ function negativeDate(date) {
     } else {
         return date;
     }
+}
+
+function displayErrorMessage(field, date, errField, label, message) {
+    field.classList.add("inputError");
+    label.classList.add('err');
+    errField.classList.add("err");
+    errField.innerHTML = message;
+}
+
+function removeErrorMessage(field, date, errField, label) {
+    field.classList.remove("inputError");
+    label.classList.remove('err');
+    errField.classList.remove("err");
+    errField.innerHTML = '';
 }

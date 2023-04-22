@@ -90,8 +90,8 @@ body {
 
 .err {
     margin-top: .8rem;
-    color: var(--lightred) !important;    
-
+    color: var(--lightred) !important;   
+     
     p {
         font-weight: 400;
         font-style: italic;
@@ -100,6 +100,7 @@ body {
     }
 }
 
-.err + input[type=number] {
-    border: 1px solid var(--lightred);
+.inputError {
+    border: 1px solid var(--lightred) !important;
+    color: var(--offblack) !important;
 }

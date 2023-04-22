@@ -135,6 +135,7 @@ body {
   text-align: center;
 }
 
-.err + input[type=number] {
-  border: 1px solid var(--lightred);
+.inputError {
+  border: 1px solid var(--lightred) !important;
+  color: var(--offblack) !important;
 }/*# sourceMappingURL=main.css.map */
