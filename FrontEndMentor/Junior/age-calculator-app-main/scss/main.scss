@@ -106,8 +106,7 @@ body {
 }
 
 
-    @media screen and (min-width: 750px) {
-
+@media screen and (min-width: 750px) {
     .dateInput {
 
         form {
@@ -142,5 +141,15 @@ body {
 
     .arrow-line {
         justify-content: flex-end;
+    }
+
+    .ageResult {
+        ul {
+            li {
+                font-size: 10.4rem;
+                letter-spacing: -0.02em;
+                line-height: 110%;
+            }
+        }
     }
 }

@@ -182,4 +182,9 @@ body {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  .ageResult ul li {
+    font-size: 10.4rem;
+    letter-spacing: -0.02em;
+    line-height: 110%;
+  }
 }/*# sourceMappingURL=main.css.map */
