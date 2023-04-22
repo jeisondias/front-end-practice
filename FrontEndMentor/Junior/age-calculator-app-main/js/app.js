@@ -65,6 +65,7 @@ function checkYear(year) {
     }
 }
 
+// Getting the Age
 function getYMD() {
     validateDate();
     clear();
@@ -80,6 +81,8 @@ function getYMD() {
         daysText.innerHTML = days;
     }
 }
+
+// Validating Date and Data
 
 function validateDate() {
     let validDay = parseInt(dayInput.value);
@@ -104,12 +107,6 @@ function validateDate() {
     }
 }
 
-function resultYear(day, month, year) {
-    if ((day + month + year) < (cDay + cMonth + cYear)) {
-
-    }
-}
-
 function negativeDate(date) {
     if(date < 0) {
         return date * -1;
@@ -118,14 +115,8 @@ function negativeDate(date) {
     }
 }
 
-function clear() {
-    if (dayInput.value == '' || monthInput.value == '' || yearInput.value == '') {
-        yearsText.innerHTML = '--';
-        monthsText.innerHTML = '--';
-        daysText.innerHTML = '--';
-    } 
-}
 
+// UI Functions
 function displayErrorMessage(field, errField, label, message) {
     field.classList.add("inputError");
     label.classList.add('err');
@@ -138,4 +129,12 @@ function removeErrorMessage(field, errField, label) {
     label.classList.remove('err');
     errField.classList.remove("err");
     errField.innerHTML = '';
+}
+
+function clear() {
+    if (dayInput.value == '' || monthInput.value == '' || yearInput.value == '') {
+        yearsText.innerHTML = '--';
+        monthsText.innerHTML = '--';
+        daysText.innerHTML = '--';
+    } 
 }
