@@ -64,6 +64,9 @@ article {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  article {
+    padding: 5.6rem;
+  }
 }
 body {
   background-color: var(--lightgrey);
