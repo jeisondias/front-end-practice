@@ -74,27 +74,59 @@ function getYMD() {
         let years = calculateYear();
         yearsText.innerHTML = years;
 
-        let months = negativeDate((cMonth - parseInt(monthInputData))) ;
+        let months = calculateMonth() ;
         monthsText.innerHTML = months;
 
-        let days = negativeDate((cDay - parseInt(dayInputData)));
+        let days = calculateDay();
         daysText.innerHTML = days;
     }
 }
 
 function calculateYear() {
-
     // Get's the difference between the year
-    let year_difference = cYear - yearInputData;
+    let year_difference = cYear - parseInt(yearInputData);
     // Check if the month is the same one or a previous one
     // Check if the day and the Month Match
 
     // This also prevents the leaping between dates, like someone who was born on Feb 29. The full year will be counted on March 1st as it should. 
     // The result will be 1 for example, if the date is Feb 28th and the person's birthday is 29th. It'll be the new age only on March 1st
+    let age;
 
-    let one_or_zero = (cMonth < monthInputData || cMonth === monthInputData && cDay === dayInputData) ? 1: 0;
-    let age = year_difference - one_or_zero;
+    if (cMonth > monthInputData || (cMonth == monthInputData && cDay >= dayInputData)) {
+        age = year_difference;
+    } else {
+        age = year_difference - 1;
+    }    
+    
     return age;
+}
+
+function calculateMonth() {
+    let months;
+    if(cDay >= dayInputData) {
+        months = cMonth - parseInt(monthInputData);
+    } 
+    else if(cDay < dayInputData) {
+        months = cMonth - parseInt(monthInputData) - 1 ;
+    }
+
+    // If Month is < 0, it'll add + 12;
+    months = months < 0 ? months + 12 : months;
+    return months;
+}
+
+function calculateDay() {
+    let days;
+    let monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+    if(cDay > dayInputData) {
+        days = cDay - parseInt(dayInputData);
+    } else {
+        // It'll add to the date the number of days from the month in the position that the user inserted
+        days = cDay - dayInputData + monthDays[parseInt(monthInputData)];
+    }
+
+    return days;
 }
 
 // Validating Date and Data
@@ -121,15 +153,6 @@ function validateDate() {
         removeErrorMessage(yearInput, yearErr, lbyear);
     }
 }
-
-function negativeDate(date) {
-    if(date < 0) {
-        return date * -1;
-    } else {
-        return date;
-    }
-}
-
 
 // UI Functions
 function displayErrorMessage(field, errField, label, message) {
