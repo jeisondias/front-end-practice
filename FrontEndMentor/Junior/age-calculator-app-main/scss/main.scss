@@ -107,6 +107,7 @@ body {
 
 
     @media screen and (min-width: 750px) {
+
     .dateInput {
 
         form {
@@ -135,6 +136,11 @@ body {
                 text-align: left;
             }
         }
+
+        
     }
 
+    .arrow-line {
+        justify-content: flex-end;
+    }
 }

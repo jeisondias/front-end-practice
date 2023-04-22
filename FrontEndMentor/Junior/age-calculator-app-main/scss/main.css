@@ -177,4 +177,9 @@ body {
     font-size: 1.4rem;
     text-align: left;
   }
+  .arrow-line {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }/*# sourceMappingURL=main.css.map */
