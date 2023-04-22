@@ -159,7 +159,7 @@ function displayErrorMessage(field, errField, label, message) {
     field.classList.add("inputError");
     label.classList.add('err');
     errField.classList.add("err");
-    errField.innerHTML = message;
+    errField.innerHTML = '<p>' + message + '</p>';
 }
 
 function removeErrorMessage(field, errField, label) {
