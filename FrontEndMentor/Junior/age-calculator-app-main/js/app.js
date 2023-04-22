@@ -16,20 +16,14 @@ const yearsText = document.querySelector('.years');
 const monthsText = document.querySelector('.months');
 const daysText = document.querySelector('.days');
 
-/*
-// Listeners
-dayInput.addEventListener('keyup', );
-monthInput.addEventListener('keyup',);
-yearInput.addEventListener('keyup');
-*/
-
 // Form Default Dates
 let dayInputData = 0;
 let monthInputData = 0;
 let yearInputData = 0;
 
-
-
+dayInput.addEventListener('keyup', getYMD);
+monthInput.addEventListener('keyup', getYMD);
+yearInput.addEventListener('keyup', getYMD);
 
 // Check if the date is correct
 function checkDay(day) {
@@ -40,7 +34,6 @@ function checkDay(day) {
         return parseInt(day);
     }
 }
-
 
 function checkMonth(month) {
     parseInt(month);
@@ -84,7 +77,7 @@ function getYMD() {
 }
 
 function negativeDate(date) {
-    if(date < -1) {
+    if(date < 0) {
         return date * -1;
     } else {
         return date;
