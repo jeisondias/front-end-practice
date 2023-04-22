@@ -71,7 +71,7 @@ function getYMD() {
     clear();
 
     if (checkDay(dayInput.value) > 0 && checkMonth(monthInput.value) > 0 && checkYear(yearInput.value) < cYear && checkYear(yearInput.value) > 0) {
-        let years = negativeDate(cYear - yearInputData);
+        let years = calculateYear();
         yearsText.innerHTML = years;
 
         let months = negativeDate((cMonth - parseInt(monthInputData))) ;
@@ -80,6 +80,21 @@ function getYMD() {
         let days = negativeDate((cDay - parseInt(dayInputData)));
         daysText.innerHTML = days;
     }
+}
+
+function calculateYear() {
+
+    // Get's the difference between the year
+    let year_difference = cYear - yearInputData;
+    // Check if the month is the same one or a previous one
+    // Check if the day and the Month Match
+
+    // This also prevents the leaping between dates, like someone who was born on Feb 29. The full year will be counted on March 1st as it should. 
+    // The result will be 1 for example, if the date is Feb 28th and the person's birthday is 29th. It'll be the new age only on March 1st
+
+    let one_or_zero = (cMonth < monthInputData || cMonth === monthInputData && cDay === dayInputData) ? 1: 0;
+    let age = year_difference - one_or_zero;
+    return age;
 }
 
 // Validating Date and Data
