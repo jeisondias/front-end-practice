@@ -2,4 +2,15 @@ article {
     background-color: var(--white);
     border-radius: 2.4rem 2.4rem 10rem 2.4rem;
     padding: 4.8rem 2.4rem;
+    min-width: 34.3rem;
+    max-width: 84rem;
+}
+
+@media screen and (min-width: 750px) {
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
