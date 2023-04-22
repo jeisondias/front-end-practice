@@ -66,6 +66,22 @@ function checkYear(year) {
 }
 
 function getYMD() {
+    validateDate();
+    clear();
+
+    if (checkDay(dayInput.value) > 0 && checkMonth(monthInput.value) > 0 && checkYear(yearInput.value) < cYear && checkYear(yearInput.value) > 0) {
+        let years = negativeDate(cYear - yearInputData);
+        yearsText.innerHTML = years;
+
+        let months = negativeDate((cMonth - parseInt(monthInputData))) ;
+        monthsText.innerHTML = months;
+
+        let days = negativeDate((cDay - parseInt(dayInputData)));
+        daysText.innerHTML = days;
+    }
+}
+
+function validateDate() {
     let validDay = parseInt(dayInput.value);
     if (!checkDay(validDay)) {
         displayErrorMessage(dayInput, dayErr, lbday, 'Must be a valid day');
@@ -86,22 +102,11 @@ function getYMD() {
     } else {
         removeErrorMessage(yearInput, yearErr, lbyear);
     }
-    
-    if (dayInput.value == '' || monthInput.value == '' || yearInput.value == '') {
-        yearsText.innerHTML = '--';
-        monthsText.innerHTML = '--';
-        daysText.innerHTML = '--';
-    } 
-    
-    else if (checkDay(dayInput.value) > 0 && checkMonth(monthInput.value) > 0 && checkYear(yearInput.value) < cYear && checkYear(yearInput.value) > 0) {
-        let years = negativeDate(cYear - yearInputData);
-        yearsText.innerHTML = years;
+}
 
-        let months = negativeDate((cMonth - parseInt(monthInputData)));
-        monthsText.innerHTML = months;
+function resultYear(day, month, year) {
+    if ((day + month + year) < (cDay + cMonth + cYear)) {
 
-        let days = negativeDate((cDay - parseInt(dayInputData)));
-        daysText.innerHTML = days;
     }
 }
 
@@ -111,6 +116,14 @@ function negativeDate(date) {
     } else {
         return date;
     }
+}
+
+function clear() {
+    if (dayInput.value == '' || monthInput.value == '' || yearInput.value == '') {
+        yearsText.innerHTML = '--';
+        monthsText.innerHTML = '--';
+        daysText.innerHTML = '--';
+    } 
 }
 
 function displayErrorMessage(field, errField, label, message) {
