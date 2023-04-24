@@ -271,16 +271,18 @@ article header img {
 }
 
 .user-repo-info {
+  background-color: var(--lghT-bluegrey);
+  border-radius: 1rem;
+  padding: 1.8rem 1.4rem 1.9rem 1.5rem;
+  margin-top: 2.3rem;
+}
+.user-repo-info ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: var(--lghT-bluegrey);
-  border-radius: 1rem;
-  padding: 1.8rem 1.4rem 1.9rem 1.5rem;
-  margin-top: 2.3rem;
 }
 .user-repo-info li {
   width: 7.9rem;
