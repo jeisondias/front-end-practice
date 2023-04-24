@@ -163,13 +163,46 @@ article {
 .user-social-info {
     margin-top: 2.4rem;
 
+
+    @include responsive(tablet) {
+        margin-top: 3rem;
+    }
+
+    @include responsive(PC) {
+        margin-top: 3rem;
+    }
+
+    @include responsive(PCH) {
+        margin-top: 3rem;
+    }
+
+
     ul {
+
+        @include responsive(tablet) {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 6.2rem;
+        }
+    
+        @include responsive(PC) {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 6.2rem;
+        }
+    
+        @include responsive(PCH) {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 6.2rem;
+        }
 
         li {
             display: flex;
             align-items: center;
             gap: 1.925rem;
             margin-bottom: 1.7rem;
+            flex: 1;
         }
     }
 
