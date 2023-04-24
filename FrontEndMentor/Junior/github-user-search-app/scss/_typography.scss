@@ -104,3 +104,9 @@ p {
         @include typeface(p,mobile);
     }
 }
+
+span {
+    color: var(--lghT-drkblue);
+    font-weight: 700;
+    font-size: 1.3rem;
+}

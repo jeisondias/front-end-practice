@@ -122,6 +122,12 @@ p {
   }
 }
 
+span {
+  color: var(--lghT-drkblue);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
 :root {
   --baseT-blue: hsl(212deg, 100%, 50%);
   --lghT-greyblue: hsl(217deg, 20%, 51%);
@@ -215,4 +221,26 @@ article.container {
   article.container {
     padding: 4rem;
   }
+}
+
+header {
+  margin-bottom: 3.6rem;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav .btnSwitch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
