@@ -32,12 +32,17 @@ img, picture {
 }
 @media screen and (max-width: 1140px) and (min-width: 768px) {
   .container {
-    padding: 14rem 9.8rem;
+    padding: 14rem 7.4rem;
   }
 }
 @media screen and (max-width: 1440px) and (min-width: 1140px) {
   .container {
-    padding: inherit;
+    padding: 14rem 0rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 14rem 0rem;
   }
 }
 
@@ -206,6 +211,28 @@ a:hover {
   text-decoration: underline !important;
 }
 
+header {
+  margin-bottom: 3.6rem;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav .btnSwitch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+}
+
 article {
   background-color: var(--lghT-white);
   border-radius: 15px;
@@ -230,35 +257,20 @@ article.container {
     padding: 4rem;
   }
 }
-
-header {
-  margin-bottom: 3.6rem;
-}
-header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-header nav .btnSwitch {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1.6rem;
-  cursor: pointer;
-}
-
 article header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1.9rem;
   margin-bottom: 3.3rem;
+}
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  article header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 4.1rem;
+  }
 }
 article header img {
   width: 70px;
@@ -272,6 +284,12 @@ article header img {
   }
 }
 @media screen and (max-width: 1440px) and (min-width: 1140px) {
+  article header img {
+    width: 117px;
+    height: 117px;
+  }
+}
+@media screen and (max-width: 1140px) and (min-width: 768px) {
   article header img {
     width: 117px;
     height: 117px;
@@ -362,6 +380,21 @@ article header img {
   color: var(--lghT-drkblue);
   border: none;
 }
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .searchBar .barLeft .search-field {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .searchBar .barLeft .search-field {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .searchBar .barLeft .search-field {
+    font-size: 1.8rem;
+  }
+}
 .searchBar .barLeft .search-field::-webkit-input-placeholder {
   color: var(--lghT-drkblue);
 }
@@ -400,6 +433,30 @@ article header img {
   color: white;
   background-color: var(--baseT-blue);
   text-decoration: none !important;
+}
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .searchBar .barRight .btnSearch {
+    width: 10.6rem;
+    height: 5rem;
+    padding: 2.1rem 1.2rem;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .searchBar .barRight .btnSearch {
+    width: 10.6rem;
+    height: 5rem;
+    padding: 2.1rem 1.2rem;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .searchBar .barRight .btnSearch {
+    width: 10.6rem;
+    height: 5rem;
+    padding: 2.1rem 1.2rem;
+    font-size: 1.6rem;
+  }
 }
 .searchBar .barRight .btnSearch:hover {
   text-decoration: none;

@@ -37,11 +37,15 @@ $container-xs: 375px;
     padding: 3.1rem 2.4rem;
 
     @include responsive(tablet) {
-        padding: 14rem 9.8rem;
+        padding: 14rem 7.4rem;
     }
 
     @include responsive(PC) {
-        padding: inherit;
+        padding: 14rem 0rem;
+    }
+
+    @include responsive(PCH) {
+        padding: 14rem 0rem;
     }
 }
 
