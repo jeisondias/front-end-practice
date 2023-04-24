@@ -1,0 +1,42 @@
+@import 'reset';
+@import 'layout';
+@import 'typography';
+@import 'colors';
+
+
+body {
+    min-height: 100vh;
+    background-color: var(--lghT-bluegrey);
+
+    @include responsive(PC) {    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.logo {
+    font-size: 2.6rem;
+}
+
+article {
+    background-color: var(--lghT-white);
+    border-radius: 15px;
+    box-shadow: var(--bxshadow);
+
+    &.container {
+        padding: 3.2rem 2.4rem;
+
+        @include responsive(PCH) {
+            padding: 4.8rem;
+        }
+
+        @include responsive(PC) {
+            padding: 4.8rem;
+        }
+
+        @include responsive(tablet) {
+            padding: 4rem;
+        }
+    }
+}

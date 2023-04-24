@@ -1,0 +1,25 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+
+html,
+input {
+    font-size: 62.5%;
+    font-family: 'Space Mono', monospace;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+img, picture {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,218 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  list-style: none;
+}
+
+html,
+input {
+  font-size: 62.5%;
+  font-family: "Space Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+img, picture {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 73rem;
+  padding: 3.1rem 2.4rem;
+}
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .container {
+    padding: 14rem 9.8rem;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .container {
+    padding: inherit;
+  }
+}
+
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .hide-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hide-desktop {
+    display: none;
+  }
+}
+
+h1 {
+  color: var(--lghT-blackblue);
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+}
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+  }
+}
+
+h2 {
+  color: var(--lghT-blackblue);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+}
+@media screen and (max-width: 540px) {
+  h2 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+h3 {
+  color: var(--baseT-blue);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+}
+@media screen and (max-width: 540px) {
+  h3 {
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+  }
+}
+
+h4 {
+  color: var(--lghT-drkblue);
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+}
+p {
+  color: var(--lghT-drkblue);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+@media screen and (max-width: 540px) {
+  p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+}
+
+:root {
+  --baseT-blue: hsl(212deg, 100%, 50%);
+  --lghT-greyblue: hsl(217deg, 20%, 51%);
+  --lghT-drkblue: hsl(217deg, 35%, 45%);
+  --lghT-blackblue: hsl(217deg, 21%, 21%);
+  --lghT-bluegrey: hsl(227deg, 100%, 98%);
+  --lghT-white: hsl(0deg, 0%, 100%);
+  --drkT-drkblue: hsl(220deg, 40%, 13%);
+  --drkT-drkerblue: hsl(222deg, 41%, 20%);
+  --drkT-Titlewhite: hsl(0deg, 0%, 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --lghT-bluegrey: var(--drkT-drkblue);
+    --lghT-white: var(--drkT-drkerblue);
+    --lghT-drkblue: var(--drkT-Titlewhite);
+    --lghT-blackblue: var(--drkT-Titlewhite);
+    --bxshadow: none;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --drkT-drkblue: var(--lghT-bluegrey);
+    --drkT-drkerblue: var(--lghT-white);
+    --drkT-Titlewhite: var(--lghT-drkblue);
+    --drkT-Titlewhite: var(--lghT-blackblue);
+    --shadow-color:70, 96, 187;
+    --bxshadow: 0px 16px 30px -10px rgba(var(--shadow-color), 0.198567) ;
+  }
+}
+[color-scheme=dark] {
+  --lghT-bluegrey: var(--drkT-drkblue);
+  --lghT-white: var(--drkT-drkerblue);
+  --lghT-drkblue: var(--drkT-Titlewhite);
+  --lghT-blackblue: var(--drkT-Titlewhite);
+  --bxshadow: none;
+}
+
+[color-scheme=white] {
+  --drkT-drkblue: var(--lghT-bluegrey);
+  --drkT-drkerblue: var(--lghT-white);
+  --drkT-Titlewhite: var(--lghT-drkblue);
+  --drkT-Titlewhite: var(--lghT-blackblue);
+  --shadow-color:70, 96, 187;
+  --bxshadow: 0px 16px 30px -10px rgba(var(--shadow-color), 0.198567) ;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--lghT-bluegrey);
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.logo {
+  font-size: 2.6rem;
+}
+
+article {
+  background-color: var(--lghT-white);
+  border-radius: 15px;
+  -webkit-box-shadow: var(--bxshadow);
+          box-shadow: var(--bxshadow);
+}
+article.container {
+  padding: 3.2rem 2.4rem;
+}
+@media screen and (min-width: 1440px) {
+  article.container {
+    padding: 4.8rem;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  article.container {
+    padding: 4.8rem;
+  }
+}
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  article.container {
+    padding: 4rem;
+  }
+}/*# sourceMappingURL=main.css.map */
