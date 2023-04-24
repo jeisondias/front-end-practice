@@ -56,3 +56,31 @@ header {
         }
     }
 }
+
+
+article {
+
+    header {
+        display: flex;
+        gap: 1.9rem;
+        margin-bottom: 3.3rem;
+
+        img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+
+            @include responsive(PCH) {
+                width: 117px;
+                height: 117px;
+            }
+    
+            @include responsive(PC) {
+                width: 117px;
+                height: 117px;
+            }
+        }
+
+
+    }
+}
