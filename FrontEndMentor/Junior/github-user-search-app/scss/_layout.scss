@@ -51,6 +51,8 @@ $container-xs: 375px;
 
 
 .hide-mobile {
+    display: none;
+    
     @include responsive(tablet) {
         display: none;
     }

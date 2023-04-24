@@ -52,16 +52,49 @@ article {
     &.container {
         padding: 3.2rem 2.4rem;
 
-        @include responsive(PCH) {
-            padding: 4.8rem;
+        @include responsive(tablet) {
+            padding: 4rem;
         }
 
         @include responsive(PC) {
+            display: flex;
             padding: 4.8rem;
         }
 
-        @include responsive(tablet) {
-            padding: 4rem;
+        @include responsive(PCH) {
+            display: flex;
+            padding: 4.8rem;
+        }        
+
+        .left {
+
+            @include responsive(PC) {
+                display: flex;
+                width: 34%;
+                margin-right: 2rem;
+            }
+    
+            @include responsive(PCH) {
+                display: flex;
+                width: 34%;
+                margin-right: 2rem;
+            }      
+            
+            img {
+                
+                @include responsive(PC) {
+                    width: 117px;
+                    height: 117px;
+                    border-radius: 50%;
+                }
+        
+                @include responsive(PCH) {
+                    width: 117px;
+                    height: 117px;
+                    border-radius: 50%;
+                }      
+                
+            }
         }
     }
 
@@ -74,6 +107,14 @@ article {
             align-items: center;
             gap: 4.1rem;
         }
+
+        @include responsive(PC) {
+            margin-bottom: 2rem;
+        }
+
+        @include responsive(PCH) {
+            margin-bottom: 2rem;
+        } 
 
         img {
             width: 70px;
@@ -95,6 +136,20 @@ article {
                 height: 117px;
             }
         }
+
+        .user-info {
+            @include responsive(PC) {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+    
+            @include responsive(PCH) {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }            
+        }
     }
 }
 
@@ -110,10 +165,12 @@ article {
 
     @include responsive(PC) {
         padding: 1.5rem 2.8rem 2.7rem 3.2rem;
+        margin-top: 3.2rem;
     }
 
     @include responsive(PCH) {
         padding: 1.5rem 2.8rem 2.7rem 3.2rem;
+        margin-top: 3.2rem;
     }
 
     ul {
@@ -169,11 +226,11 @@ article {
     }
 
     @include responsive(PC) {
-        margin-top: 3rem;
+        margin-top: 3.7rem;
     }
 
     @include responsive(PCH) {
-        margin-top: 3rem;
+        margin-top: 3.7rem;
     }
 
 
