@@ -302,6 +302,21 @@ article header img {
   padding: 1.8rem 1.4rem 1.9rem 1.5rem;
   margin-top: 2.3rem;
 }
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .user-repo-info {
+    padding: 1.5rem 2.8rem 2.7rem 3.2rem;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .user-repo-info {
+    padding: 1.5rem 2.8rem 2.7rem 3.2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .user-repo-info {
+    padding: 1.5rem 2.8rem 2.7rem 3.2rem;
+  }
+}
 .user-repo-info ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,10 +325,49 @@ article header img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .user-repo-info ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 8rem;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .user-repo-info ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 8rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .user-repo-info ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 8rem;
+  }
+}
 .user-repo-info li {
   width: 7.9rem;
   height: 48px;
   text-align: center;
+}
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .user-repo-info li {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .user-repo-info li {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .user-repo-info li {
+    text-align: left;
+  }
 }
 .user-repo-info li h4 {
   margin-bottom: 0.8rem;
