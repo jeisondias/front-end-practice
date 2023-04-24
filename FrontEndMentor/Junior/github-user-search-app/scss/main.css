@@ -312,4 +312,7 @@ article header img {
           align-items: center;
   gap: 1.925rem;
   margin-bottom: 1.7rem;
+}
+.user-social-info .unavaliable {
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */
