@@ -130,3 +130,86 @@ article {
         opacity: .5;
     }
 }
+
+.searchBar {
+    min-width: 100%;
+    max-width: 73rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--lghT-white);
+    box-shadow: var(--bxshadow);
+    border-radius: 1.5rem;
+    padding: .65rem .7rem .75rem 1.6rem;
+    margin-bottom: 1.6rem;
+
+    .barLeft {
+        width: 58%;
+        display: flex;
+        align-items: center;
+        gap: .895rem;
+
+        img {
+            width: 2rem;
+            height: 2rem;
+            object-fit: contain;
+        }
+    
+        .search-field {
+            width: 45rem;
+            background: transparent;
+            font-size: 1.3rem;
+            font-weight: 400;
+            line-height: 25px;
+            color: var(--lghT-drkblue);
+            border: none;
+    
+            &::placeholder {
+                color: var(--lghT-drkblue);   
+            }
+        }
+    }
+
+    .barRight {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 2.4rem;
+
+        .btnSearch {
+            width: 8.4rem;
+            height: 4.6rem;
+            padding: 1.75rem 1.2rem;
+            border-radius: 1rem;
+    
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: .73rem;
+    
+    
+            text-align: center;
+            display: block;
+            color: white;
+            background-color: var(--baseT-blue);
+            text-decoration: none !important;
+    
+            &:hover {
+                text-decoration: none;
+                opacity: .8;
+            }
+        }
+    
+        .error {
+            display: none;
+            color: var(--lght-red);
+
+            @include responsive(phone) {
+                position: absolute;
+                top: 80px;
+            }
+        }
+    }
+
+    
+}
