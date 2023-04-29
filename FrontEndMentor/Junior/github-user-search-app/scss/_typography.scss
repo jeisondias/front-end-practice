@@ -57,7 +57,7 @@
 }
 
 h1 {
-    color: var(--lghT-blackblue);
+    color: var(--title-color);
     @include typeface(h1,desktop);
 
     @include responsive(phone) {
@@ -67,7 +67,7 @@ h1 {
 
 
 h2 {
-    color: var(--lghT-blackblue);
+    color: var(--title-color);
     @include typeface(h2,desktop);
 
     @include responsive(phone) {
@@ -87,7 +87,7 @@ h3 {
 
 
 h4 {
-    color: var(--lghT-drkblue);
+    color: var(--p-color);
     @include typeface(h4,desktop);
 
     @include responsive(phone) {
@@ -97,7 +97,7 @@ h4 {
 
 
 p {
-    color: var(--lghT-drkblue);
+    color: var(--p-color);
     @include typeface(p,desktop);
 
     @include responsive(phone) {
@@ -106,7 +106,7 @@ p {
 }
 
 span {
-    color: var(--lghT-drkblue);
+    color: var(--p-color);
     font-weight: 700;
     font-size: 1.3rem;
 }

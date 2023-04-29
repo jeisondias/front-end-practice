@@ -6,7 +6,7 @@
 
 body {
     min-height: 100vh;
-    background-color: var(--lghT-bluegrey);
+    background-color: var(--bg-color);
 
     @include responsive(PC) {    
         display: flex;
@@ -20,7 +20,7 @@ body {
 }
 
 a {
-    color: var(--lghT-drkblue);
+    color: var(--p-color);
 
     &:hover {
         text-decoration: underline !important;
@@ -45,7 +45,7 @@ header {
 
 
 article {
-    background-color: var(--lghT-white);
+    background-color: var(--box-el-color);
     border-radius: 15px;
     box-shadow: var(--bxshadow);
 
@@ -154,7 +154,7 @@ article {
 }
 
 .user-repo-info {
-    background-color: var(--lghT-bluegrey);
+    background-color: var(--bg-color);
     border-radius: 1rem;
     padding: 1.8rem 1.4rem 1.9rem 1.5rem;
     margin-top: 2.3rem;
@@ -275,7 +275,7 @@ article {
     align-items: center;
     justify-content: space-between;
 
-    background-color: var(--lghT-white);
+    background-color: var(--box-el-color);
     box-shadow: var(--bxshadow);
     border-radius: 1.5rem;
     padding: .65rem .7rem .75rem 1.6rem;
@@ -299,7 +299,7 @@ article {
             font-size: 1.3rem;
             font-weight: 400;
             line-height: 25px;
-            color: var(--lghT-drkblue);
+            color: var(--p-color);
             border: none;
 
             @include responsive(tablet) {
@@ -315,7 +315,7 @@ article {
             }
     
             &::placeholder {
-                color: var(--lghT-drkblue);   
+                color: var(--p-color);   
             }
         }
     }
