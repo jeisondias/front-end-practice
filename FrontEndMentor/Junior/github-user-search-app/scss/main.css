@@ -164,6 +164,7 @@ span {
     --p-color: var(--p-color-light);
     --shadow-color:70, 96, 187;
     --bxshadow: 0px 16px 30px -10px rgba(var(--shadow-color), 0.198567) ;
+    --hover-switch: brightness(0) saturate(100%) invert(12%) sepia(19%) saturate(754%) hue-rotate(181deg) brightness(92%) contrast(90%);
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -174,6 +175,7 @@ span {
     --p-color: var(--p-color-dark);
     --shadow-color: none;
     --bxshadow: none;
+    --hover-switch: brightness(0) saturate(100%) invert(67%) sepia(60%) saturate(226%) hue-rotate(185deg) brightness(88%) contrast(87%);
   }
 }
 [color-scheme=light] {
@@ -183,6 +185,7 @@ span {
   --p-color: var(--p-color-light);
   --shadow-color:70, 96, 187;
   --bxshadow: 0px 16px 30px -10px rgba(var(--shadow-color), 0.198567) ;
+  --hover-switch: brightness(0) saturate(100%) invert(12%) sepia(19%) saturate(754%) hue-rotate(181deg) brightness(92%) contrast(90%);
 }
 
 [color-scheme=dark] {
@@ -192,6 +195,7 @@ span {
   --p-color: var(--p-color-dark);
   --shadow-color: none;
   --bxshadow: none;
+  --hover-switch: brightness(0) saturate(100%) invert(67%) sepia(60%) saturate(226%) hue-rotate(185deg) brightness(88%) contrast(87%);
 }
 
 body {
@@ -245,6 +249,14 @@ header nav .btnSwitch {
   display: flex;
   gap: 1.6rem;
   cursor: pointer;
+}
+header nav .btnSwitch:hover span {
+  -webkit-filter: var(--hover-switch);
+          filter: var(--hover-switch);
+}
+header nav .btnSwitch:hover img {
+  -webkit-filter: var(--hover-switch);
+          filter: var(--hover-switch);
 }
 
 article {

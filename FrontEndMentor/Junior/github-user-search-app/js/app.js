@@ -19,11 +19,7 @@ const error    = document.querySelector('.error');
 
 
 const fetchApi = async (gitUsername) => {
-    const response = await fetch('https://api.github.com/users/' + gitUsername, {
-        headers: {
-            'Authorization': 'token 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',
-        }
-    });
+    const response = await fetch('https://api.github.com/users/' + gitUsername);
 
     if (response.status === 200) {    
         const gitData = await response.json();
