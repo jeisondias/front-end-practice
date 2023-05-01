@@ -270,6 +270,10 @@ article {
             gap: 1.925rem;
             margin-bottom: 1.7rem;
             flex-basis: 43%;
+
+            img {
+                filter: var(--svg-color);
+            }
         }
     }
 
