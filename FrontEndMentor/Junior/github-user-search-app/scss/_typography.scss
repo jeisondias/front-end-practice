@@ -96,7 +96,8 @@ h4 {
 }
 
 
-p {
+p,
+a {
     color: var(--p-color);
     @include typeface(p,desktop);
 
@@ -104,6 +105,7 @@ p {
         @include typeface(p,mobile);
     }
 }
+
 
 span {
     color: var(--p-color);
