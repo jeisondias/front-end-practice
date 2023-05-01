@@ -17,8 +17,13 @@ const company = document.querySelector('.company p');
 
 const error    = document.querySelector('.error');
 
+
 const fetchApi = async (gitUsername) => {
-    const response = await fetch('https://api.github.com/users/' + gitUsername);
+    const response = await fetch('https://api.github.com/users/' + gitUsername, {
+        headers: {
+            'Authorization': 'token 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',
+        }
+    });
 
     if (response.status === 200) {    
         const gitData = await response.json();
@@ -62,8 +67,6 @@ const renderUser = async (gitUser) => {
         website.innerHTML = checkNull(gitData.blog, website.parentElement);
         website.href = 'https://' + gitData.blog;
         company.innerHTML = checkNull(gitData.company, company.parentElement);
-
-        console.log(gitData);
     }
 
 }
@@ -94,5 +97,7 @@ search.addEventListener('change', (e) => {
     renderUser(search.value);
 });
 
+
+// Nice example profile
 renderUser('martins-rafael');
 
