@@ -195,6 +195,8 @@ span {
 body {
   min-height: 100vh;
   background-color: var(--bg-color);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 @media screen and (max-width: 1440px) and (min-width: 1140px) {
   body {
