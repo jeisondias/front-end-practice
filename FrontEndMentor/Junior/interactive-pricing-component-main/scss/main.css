@@ -101,7 +101,7 @@ p {
   line-height: 1.639rem;
 }
 
-.views-price p {
+.billing p {
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
   line-height: 1.912rem;
@@ -109,25 +109,25 @@ p {
   text-transform: uppercase;
 }
 @media screen and (max-width: 540px) {
-  .views-price p {
+  .billing p {
     font-size: 1.2rem;
     letter-spacing: 0.171rem;
     line-height: 1.639rem;
   }
 }
-.views-price .price p {
+.billing .price p {
   font-size: 1.6rem;
   line-height: 2.186rem;
   font-weight: 600;
   text-transform: lowercase;
 }
 @media screen and (max-width: 540px) {
-  .views-price .price p {
+  .billing .price p {
     font-size: 1.4rem;
     line-height: 1.912rem;
   }
 }
-.views-price .price p span {
+.billing .price p span {
   color: var(--cta-color);
   font-size: 4rem;
   letter-spacing: -0.1rem;
@@ -135,7 +135,7 @@ p {
   font-weight: 800;
 }
 @media screen and (max-width: 540px) {
-  .views-price .price p span {
+  .billing .price p span {
     font-size: 3.2rem;
     letter-spacing: -0.2rem;
     line-height: 4.371rem;
@@ -151,4 +151,33 @@ header {
 }
 header h1 {
   margin-bottom: 0.8rem;
+}
+
+main {
+  background-color: var(--main-background);
+  padding: 3.4rem 2.4rem;
+  border-radius: 0.8rem;
+  -webkit-box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+          box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+}
+
+.billing {
+  display: grid;
+  row-gap: 2.4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-template-areas: "pageviews" "slider" "price" "switcher";
+}
+.billing p {
+  grid-area: pageviews;
+}
+.billing .scroller {
+  grid-area: slider;
+}
+.billing .price {
+  grid-area: price;
+}
+.billing .year-month-switcher {
+  grid-area: switcher;
 }/*# sourceMappingURL=main.css.map */
