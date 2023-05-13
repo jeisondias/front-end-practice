@@ -1,0 +1,44 @@
+$container-xl: 1440px;
+$container-l: 1140px;
+$container-s: 540px;
+
+@mixin responsive($device) {
+    @if $device == PCH {
+        @media screen and (min-width: $container-xl) {
+            @content;
+        }
+    }
+
+    @else if $device == PC {
+        @media screen and (max-width: $container-xl) and (min-width: $container-s) {
+            @content;
+        }
+    }
+
+    @else if $device == phone {
+        @media screen  and (max-width: $container-s) {
+            @content;
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 54rem;
+    margin: 0 auto;
+    padding: 5.3rem 2.4rem;
+
+    @include responsive(PC) {
+        padding: 5.6rem 0;   
+    }
+
+    @include responsive(PCH) {
+        padding: 5.6rem 0;   
+    }
+}
+
+.hide-mobile {
+    @include responsive(phone) {
+        display: none;
+    }
+}

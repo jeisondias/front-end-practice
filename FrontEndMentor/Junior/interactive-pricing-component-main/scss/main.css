@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+:root {
+  --pricing-background: hsl(0, 0%, 100%);
+  --main-background: hsl(230, 100%, 99%);
+  --text: hsl(225, 20%, 60%);
+  --slider-full-background: hsl(174, 86%, 45%);
+  --slider-bar: hsl(174, 77%, 80%);
+  --slider-empty-bar: hsl(224, 65%, 95%);
+  --discount-bg: hsl(14, 92%, 95%);
+  --discount-text: hsl(15, 100%, 70%);
+  --toggle-bg: hsl(223, 50%, 87%);
+  --cta-text: hsl(226, 100%, 87%);
+  --cta-color: hsl(227, 35%, 25%);
+}
+
+.container {
+  width: 100%;
+  max-width: 54rem;
+  margin: 0 auto;
+  padding: 5.3rem 2.4rem;
+}
+@media screen and (max-width: 1440px) and (min-width: 540px) {
+  .container {
+    padding: 5.6rem 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 5.6rem 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: var(--text);
+}
+
+h1 {
+  color: var(--cta-color);
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 3.825rem;
+}
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2.732rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.049rem;
+}
+@media screen and (max-width: 540px) {
+  h2 {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+  }
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.639rem;
+}
+
+.views-price p {
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  line-height: 1.912rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 540px) {
+  .views-price p {
+    font-size: 1.2rem;
+    letter-spacing: 0.171rem;
+    line-height: 1.639rem;
+  }
+}
+.views-price .price p {
+  font-size: 1.6rem;
+  line-height: 2.186rem;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+@media screen and (max-width: 540px) {
+  .views-price .price p {
+    font-size: 1.4rem;
+    line-height: 1.912rem;
+  }
+}
+.views-price .price p span {
+  color: var(--cta-color);
+  font-size: 4rem;
+  letter-spacing: -0.1rem;
+  line-height: 5.464rem;
+  font-weight: 800;
+}
+@media screen and (max-width: 540px) {
+  .views-price .price p span {
+    font-size: 3.2rem;
+    letter-spacing: -0.2rem;
+    line-height: 4.371rem;
+  }
+}/*# sourceMappingURL=main.css.map */
