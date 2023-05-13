@@ -151,6 +151,12 @@ p {
   text-align: center;
 }
 
+a {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--cta-text);
+}
+
 header {
   height: 14.5rem;
   background: url("/images/pattern-circles.svg") no-repeat center;
@@ -266,4 +272,18 @@ main {
   width: 7.95px;
   height: 7.04px;
   display: block;
+}
+.plan-details-trial .btn-trial {
+  width: 17rem;
+  height: 4.1rem;
+  padding: 1.2rem 4.6rem;
+  border-radius: 2.5rem;
+  text-align: center;
+  background-color: var(--cta-color);
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.plan-details-trial .btn-trial:hover {
+  color: white;
 }/*# sourceMappingURL=main.css.map */
