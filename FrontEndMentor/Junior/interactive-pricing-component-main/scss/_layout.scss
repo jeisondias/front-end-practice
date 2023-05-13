@@ -25,6 +25,10 @@ $container-s: 540px;
 body {
     background: url('/images/bg-pattern.svg') no-repeat;
     background-color: var(--main-background);
+
+    @include responsive(PCH) {
+        background: url('/images/bg-pattern.svg') top right no-repeat;
+    }
 }
 
 .container {
