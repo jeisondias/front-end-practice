@@ -141,6 +141,11 @@ p {
     line-height: 4.371rem;
   }
 }
+.billing .year-month-switcher p {
+  text-transform: none;
+  font-weight: 600;
+  letter-spacing: normal;
+}
 
 header {
   height: 14.5rem;
@@ -159,14 +164,13 @@ main {
   border-radius: 0.8rem;
   -webkit-box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
           box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+  position: relative;
 }
 
 .billing {
   display: grid;
   row-gap: 2.4rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
   grid-template-areas: "pageviews" "slider" "price" "switcher";
 }
 .billing p {
@@ -180,4 +184,30 @@ main {
 }
 .billing .year-month-switcher {
   grid-area: switcher;
+}
+
+.year-month-switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3.8rem;
+}
+.year-month-switcher li:nth-child(2) {
+  margin: 0 0.8rem;
+}
+
+.line {
+  width: 100%;
+  max-width: 54rem;
+  height: 0.1rem;
+  background-color: var(--slider-empty-bar);
+  position: absolute;
+  left: 0;
 }/*# sourceMappingURL=main.css.map */

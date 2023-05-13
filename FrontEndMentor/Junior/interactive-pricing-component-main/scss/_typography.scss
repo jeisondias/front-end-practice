@@ -99,4 +99,12 @@ p {
             }
         }
     }
+
+    .year-month-switcher {
+        p {
+            text-transform: none;
+            font-weight: 600;
+            letter-spacing: normal;
+        }
+    }
 }
