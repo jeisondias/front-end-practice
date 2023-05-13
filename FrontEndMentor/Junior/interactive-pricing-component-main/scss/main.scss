@@ -87,3 +87,27 @@ main {
     position: absolute;
     left: 0;
 }
+
+.plan-details-trial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+    margin-top: 2.4rem;
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.605rem;
+        margin-bottom: 1rem;
+
+        &::before {
+            content: "";
+            background: url('../images/icon-check.svg');
+            width: 7.95px;
+            height: 7.04px;
+            display: block;
+        }
+    }
+}

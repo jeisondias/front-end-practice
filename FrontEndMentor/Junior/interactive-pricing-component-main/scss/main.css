@@ -231,4 +231,39 @@ main {
   background-color: var(--slider-empty-bar);
   position: absolute;
   left: 0;
+}
+
+.plan-details-trial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3.2rem;
+  margin-top: 2.4rem;
+}
+.plan-details-trial li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.605rem;
+  margin-bottom: 1rem;
+}
+.plan-details-trial li::before {
+  content: "";
+  background: url("../images/icon-check.svg");
+  width: 7.95px;
+  height: 7.04px;
+  display: block;
 }/*# sourceMappingURL=main.css.map */
