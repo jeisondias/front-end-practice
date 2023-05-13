@@ -292,6 +292,8 @@ main {
 
 .scroller input[type=range] {
   -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   width: 100%;
   height: 0.8rem;
   border-radius: 0.5rem;
@@ -308,8 +310,8 @@ main {
   -webkit-box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
           box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
   cursor: pointer;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .scroller input[type=range]::-webkit-slider-thumb:hover {
   background: url("../images/icon-slider.svg") var(--hover-slider-button) no-repeat center;
@@ -317,10 +319,58 @@ main {
 .scroller input[type=range]::-webkit-slider-thumb:active {
   background: url("../images/icon-slider.svg") var(--grab-slider-button) no-repeat center;
 }
+.scroller input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50px;
+  background: url("../images/icon-slider.svg") var(--slider-full-background) no-repeat center;
+  box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+  border: none;
+  cursor: pointer;
+  -moz-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.scroller input[type=range]::-moz-range-thumb:hover {
+  background: url("../images/icon-slider.svg") var(--hover-slider-button) no-repeat center;
+}
+.scroller input[type=range]::-moz-range-thumb:active {
+  background: url("../images/icon-slider.svg") var(--grab-slider-button) no-repeat center;
+}
+.scroller input[type=range]::-ms-thumb {
+  -webkit-appearance: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50px;
+  background: url("../images/icon-slider.svg") var(--slider-full-background) no-repeat center;
+  box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+  border: none;
+  cursor: pointer;
+  -ms-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.scroller input[type=range]::-ms-thumb:hover {
+  background: url("../images/icon-slider.svg") var(--hover-slider-button) no-repeat center;
+}
+.scroller input[type=range]::-ms-thumb:active {
+  background: url("../images/icon-slider.svg") var(--grab-slider-button) no-repeat center;
+}
 .scroller input[type=range]::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  border: none;
+  background: transparent;
+}
+.scroller input[type=range]::-moz-range-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+.scroller input[type=range]::-ms-track {
+  -webkit-appearance: none;
+  box-shadow: none;
   border: none;
   background: transparent;
 }/*# sourceMappingURL=main.css.map */

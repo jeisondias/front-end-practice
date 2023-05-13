@@ -131,6 +131,7 @@ main {
     
     input[type="range"] {
         -webkit-appearance: none;
+        appearance: none;
         width: 100%;
         height: .8rem;
         border-radius: .5rem;
@@ -145,6 +146,46 @@ main {
             background: url('../images/icon-slider.svg') var(--slider-full-background) no-repeat center;
             box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
             cursor: pointer;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                background: url('../images/icon-slider.svg') var(--hover-slider-button) no-repeat center;
+            }
+
+            &:active {
+                background: url('../images/icon-slider.svg') var(--grab-slider-button) no-repeat center;
+            }
+        }
+
+        &::-moz-range-thumb{
+            -webkit-appearance: none;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50px;
+            background: url('../images/icon-slider.svg') var(--slider-full-background) no-repeat center;
+            box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+            border: none;
+            cursor: pointer;
+            transition: .2s ease;
+
+            &:hover {
+                background: url('../images/icon-slider.svg') var(--hover-slider-button) no-repeat center;
+            }
+
+            &:active {
+                background: url('../images/icon-slider.svg') var(--grab-slider-button) no-repeat center;
+            }
+        }
+
+        &::-ms-thumb{
+            -webkit-appearance: none;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50px;
+            background: url('../images/icon-slider.svg') var(--slider-full-background) no-repeat center;
+            box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+            border: none;
+            cursor: pointer;
             transition: .2s ease;
 
             &:hover {
@@ -157,6 +198,20 @@ main {
         }
 
         &::-webkit-slider-runnable-track  {
+            -webkit-appearance: none;
+            box-shadow: none;
+            border: none;
+            background: transparent;
+        }
+
+        &::-moz-range-track  {
+            -webkit-appearance: none;
+            box-shadow: none;
+            border: none;
+            background: transparent;
+        }
+
+        &::-ms-track {
             -webkit-appearance: none;
             box-shadow: none;
             border: none;
