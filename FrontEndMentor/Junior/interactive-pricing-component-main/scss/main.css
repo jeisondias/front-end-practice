@@ -146,6 +146,10 @@ p {
   font-weight: 600;
   letter-spacing: normal;
 }
+.billing .year-month-switcher .discount {
+  font-size: 1rem;
+  text-align: center;
+}
 
 header {
   height: 14.5rem;
@@ -201,6 +205,23 @@ main {
 }
 .year-month-switcher li:nth-child(2) {
   margin: 0 0.8rem;
+}
+.year-month-switcher .discount {
+  background-color: var(--discount-bg);
+  color: var(--discount-text);
+  padding: 0.1rem 0.8rem;
+  height: 1.9rem;
+  border-radius: 9.5px;
+}
+@media screen and (min-width: 1440px) {
+  .year-month-switcher .discount {
+    padding: 0rem 0.7rem;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 540px) {
+  .year-month-switcher .discount {
+    padding: 0rem 0.7rem;
+  }
 }
 
 .line {

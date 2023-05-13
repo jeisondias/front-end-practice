@@ -61,6 +61,22 @@ main {
     li:nth-child(2) {
         margin: 0 .8rem;
     }
+
+    .discount {
+        background-color: var(--discount-bg);
+        color: var(--discount-text);
+        padding: .1rem .8rem;
+        height: 1.9rem;
+        border-radius: 9.5px;
+
+        @include responsive(PCH) {
+            padding: 0rem .7rem;
+        }
+
+        @include responsive(PC) {
+            padding: 0rem .7rem;
+        }
+    }
 }
 
 .line {
