@@ -28,6 +28,8 @@ svg {
   --main-background: hsl(230, 100%, 99%);
   --text: hsl(225, 20%, 60%);
   --slider-full-background: hsl(174, 86%, 45%);
+  --hover-slider-button: hsl(174, 73%, 70%);
+  --grab-slider-button: hsl(174, 65%, 41%);
   --slider-bar: hsl(174, 77%, 80%);
   --slider-empty-bar: hsl(224, 65%, 95%);
   --discount-bg: hsl(14, 92%, 95%);
@@ -286,4 +288,39 @@ main {
 }
 .plan-details-trial .btn-trial:hover {
   color: white;
+}
+
+.scroller input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: var(--slider-empty-bar);
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, var(--hover-slider-button)), color-stop(60%, var(--slider-empty-bar)));
+  background: linear-gradient(90deg, var(--hover-slider-button) 60%, var(--slider-empty-bar) 60%);
+}
+.scroller input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50px;
+  background: url("../images/icon-slider.svg") var(--slider-full-background) no-repeat center;
+  -webkit-box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+          box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.scroller input[type=range]::-webkit-slider-thumb:hover {
+  background: url("../images/icon-slider.svg") var(--hover-slider-button) no-repeat center;
+}
+.scroller input[type=range]::-webkit-slider-thumb:active {
+  background: url("../images/icon-slider.svg") var(--grab-slider-button) no-repeat center;
+}
+.scroller input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  background: transparent;
 }/*# sourceMappingURL=main.css.map */
