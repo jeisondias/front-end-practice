@@ -56,6 +56,33 @@ main {
 
     .year-month-switcher {
         grid-area: switcher;
+
+        @include responsive(PCH) {
+            margin-top: .7rem;
+        }
+
+        @include responsive(PC) {
+            margin-top: .7rem;
+        }
+
+    }
+
+    @include responsive(PCH) {
+        align-items: center;
+        row-gap: 3.8rem;
+        grid-template-areas: 
+        "pageviews price"
+        "slider slider"
+        "switcher switcher";
+    }
+
+    @include responsive(PC) {
+        align-items: center;
+        row-gap: 3.8rem;
+        grid-template-areas: 
+        "pageviews price"
+        "slider slider"
+        "switcher switcher";
     }
 }
 
