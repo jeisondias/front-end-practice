@@ -283,8 +283,8 @@ main {
   height: 0.8rem;
   border-radius: 0.5rem;
   background-color: var(--slider-empty-bar);
-  background: -webkit-gradient(linear, left top, right top, color-stop(60%, var(--hover-slider-button)), color-stop(60%, var(--slider-empty-bar)));
-  background: linear-gradient(90deg, var(--hover-slider-button) 60%, var(--slider-empty-bar) 60%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--hover-slider-button)), color-stop(50%, var(--slider-empty-bar)));
+  background: linear-gradient(90deg, var(--hover-slider-button) 50%, var(--slider-empty-bar) 50%);
 }
 .scroller input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;

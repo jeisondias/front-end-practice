@@ -124,7 +124,7 @@ main {
         height: .8rem;
         border-radius: .5rem;
         background-color: var(--slider-empty-bar);
-        background: linear-gradient(90deg, var(--hover-slider-button) 60%, var(--slider-empty-bar) 60%);
+        background: linear-gradient(90deg, var(--hover-slider-button) 50%, var(--slider-empty-bar) 50%);
 
         &::-webkit-slider-thumb{
             -webkit-appearance: none;

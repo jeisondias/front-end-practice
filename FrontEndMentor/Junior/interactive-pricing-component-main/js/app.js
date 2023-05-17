@@ -6,9 +6,9 @@ const discountBtn = document.querySelector('#discountBtn');
 const price = [10, 12, 16, 24, 36];
 let price2 = [10, 12, 16, 24, 36];
 
-
 function showNewValue() {
-    
+    percentage();
+
     switch(scroller.value) {
         case '1': 
         pageViews.innerText = '10k Pageviews';
@@ -44,6 +44,12 @@ function discount() {
         price2 = price;
         showNewValue()
     }
+}
+
+function percentage() {
+    var sliderValue = ((scroller.value - scroller.min) / (scroller.max - scroller.min)) * 100;
+    var color = 'linear-gradient(90deg, var(--hover-slider-button)' + sliderValue + '%, var(--slider-empty-bar)' + sliderValue + '%)';
+    scroller.style.background = color;
 }
 
 discountBtn.addEventListener('click', discount);
