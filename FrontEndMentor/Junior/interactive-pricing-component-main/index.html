@@ -21,15 +21,12 @@
 
     <main>
       <section class="billing">
-        <p>100k PageViews</p>
+        <p id="pageviews">100k PageViews</p>
         <div class="price">
-          <p><span>$16.00</span> / month</p>
+          <p><span id="price-value">$16.00</span> / month</p>
         </div>
         <div class="scroller">
-          <div class="bar"></div>
           <input type="range" name="price" id="price" min="1" max="5" />
-
-          <div class="circle"></div>
         </div>
         <ul class="year-month-switcher">
           <li>
@@ -37,7 +34,7 @@
           </li>
           <li>
             <label class="switch">
-              <input type="checkbox">
+              <input type="checkbox" id="discountBtn">
               <span class="slider"></span>
             </label>
           </li>
@@ -63,6 +60,6 @@
 
     </main>
   </section>
-
+  <script src="/js/app.js"></script>
 </body>
 </html>
