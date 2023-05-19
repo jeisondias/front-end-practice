@@ -1,0 +1,99 @@
+@mixin typeface($size, $device: desktop) {
+    //H1
+
+    @if $size == h1 and $device == desktop {
+        font-size: 6.4rem;
+        font-weight: 600;
+        line-height: 110%;
+        letter-spacing: -.2rem;
+    }@else if $size == h1 and $device == mobile {
+        font-size: 4.8rem;
+        line-height: 2.3rem;
+    }
+
+    //H2
+
+    @if $size == h2 and $device == desktop {
+        font-size: 4.8rem;
+        font-weight: 600;
+        line-height: 110%;
+        letter-spacing: -.2rem;
+    }@else if $size == h2 and $device == mobile {
+        font-size: 3.2rem;
+        line-height: 2rem;
+    }
+
+    //H3
+
+    @if $size == h3 and $device == desktop {
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 110%;
+        letter-spacing: -.2rem;
+    }
+
+    //H4
+
+    @if $size == h4 and $device == desktop {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 110%;
+        letter-spacing: -.2rem;
+    }
+
+    //P
+
+    @if $size == p and $device == desktop {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 150%;
+    }@else if $size == p and $device == mobile {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h1 {
+    @include typeface(h1,desktop);
+
+    @include responsive(phone) {
+        @include typeface(h1,mobile);
+    }
+}
+
+h2 {
+    @include typeface(h2,desktop);
+
+    @include responsive(phone) {
+        @include typeface(h2,mobile);
+    }
+}
+
+h3 {
+    @include typeface(h3,desktop);
+}
+
+h4 {
+    @include typeface(h4,desktop);
+}
+
+p {
+    @include typeface(p,desktop);
+}
+
+span {
+    @include typeface(p,mobile);
+}
+
+
+label {
+    @include typeface(p,desktop);
+}

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --blue: hsl(227deg, 92%, 58%);
+  --text: hsl(215deg, 17%, 45%);
+  --titles: hsl(215deg, 31%, 21%);
+  --borders: hsl(200deg, 24%, 88%);
+  --pure-white: hsl(0deg, 0%, 100%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--titles);
+}
+
+p {
+  color: var(--text);
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 6.4rem;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -0.2rem;
+}
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 4.8rem;
+    line-height: 2.3rem;
+  }
+}
+
+h2 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -0.2rem;
+}
+@media screen and (max-width: 540px) {
+  h2 {
+    font-size: 3.2rem;
+    line-height: 2rem;
+  }
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -0.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -0.2rem;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+span {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+label {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+body {
+  background-color: var(--pure-white);
+}/*# sourceMappingURL=main.css.map */

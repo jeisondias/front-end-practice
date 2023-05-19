@@ -1,0 +1,19 @@
+:root {
+    --blue: hsl(227deg, 92%, 58%);
+    --text: hsl(215deg, 17%, 45%);
+    --titles: hsl(215deg, 31%, 21%);
+    --borders: hsl(200deg, 24%, 88%);
+    --pure-white: hsl(0deg, 0%, 100%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--titles);
+}
+
+p {
+    color: var(--text);
+}
+
