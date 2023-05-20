@@ -5,7 +5,7 @@
         font-size: 6.4rem;
         font-weight: 600;
         line-height: 110%;
-        letter-spacing: -.2rem;
+        letter-spacing: -0.05em;
     }@else if $size == h1 and $device == mobile {
         font-size: 4.8rem;
         line-height: 5.28rem;
@@ -17,7 +17,7 @@
         font-size: 4.8rem;
         font-weight: 600;
         line-height: 110%;
-        letter-spacing: -.2rem;
+        letter-spacing: -0.05em;
     }@else if $size == h2 and $device == mobile {
         font-size: 3.2rem;
         line-height: 2rem;
@@ -29,7 +29,7 @@
         font-size: 2.4rem;
         font-weight: 600;
         line-height: 110%;
-        letter-spacing: -.2rem;
+        letter-spacing: -0.05em;
     }
 
     //H4
@@ -38,7 +38,7 @@
         font-size: 2rem;
         font-weight: 600;
         line-height: 110%;
-        letter-spacing: -.2rem;
+        letter-spacing: -0.05em;
     }
 
     //P
@@ -96,4 +96,14 @@ span {
 
 label {
     @include typeface(p,desktop);
+
+    span {
+        @include typeface(h3,desktop);
+    }
+}
+
+
+input[type="number"] {
+    @include typeface(h3,desktop);
+    letter-spacing: -0.05rem;
 }

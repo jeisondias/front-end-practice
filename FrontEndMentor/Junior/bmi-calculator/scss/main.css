@@ -22,6 +22,16 @@ fieldset {
   border: none;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 :root {
   --blue: hsl(227deg, 92%, 58%);
   --radio-blue: hsla(227deg, 92%, 58%, 0.5);
@@ -45,6 +55,13 @@ p {
 label {
   color: var(--titles);
 }
+label span {
+  color: var(--blue);
+}
+
+input[type=number] {
+  color: var(--titles);
+}
 
 .container {
   margin: 0 auto;
@@ -66,6 +83,10 @@ label {
   padding: 3.2rem 2.4rem 3.2rem;
 }
 
+.hide {
+  display: none !important;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
@@ -78,7 +99,7 @@ h1 {
   font-size: 6.4rem;
   font-weight: 600;
   line-height: 110%;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.05em;
 }
 @media screen and (max-width: 540px) {
   h1 {
@@ -91,7 +112,7 @@ h2 {
   font-size: 4.8rem;
   font-weight: 600;
   line-height: 110%;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.05em;
 }
 @media screen and (max-width: 540px) {
   h2 {
@@ -104,14 +125,14 @@ h3 {
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 110%;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.05em;
 }
 
 h4 {
   font-size: 2rem;
   font-weight: 600;
   line-height: 110%;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.05em;
 }
 
 p {
@@ -129,6 +150,20 @@ label {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 150%;
+}
+label span {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -0.05em;
+}
+
+input[type=number] {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -0.05em;
+  letter-spacing: -0.05rem;
 }
 
 body {
@@ -186,6 +221,7 @@ body {
           flex-direction: column;
   gap: 2.4rem;
   position: absolute;
+  width: 100%;
   height: 100%;
   min-height: 64.9rem;
   padding: 2.4rem;
@@ -258,6 +294,71 @@ body {
   height: 15px;
   border-radius: 50%;
   background-color: var(--blue);
+}
+.hero .hero-content .hero-right .calculator form .number-options,
+.hero .hero-content .hero-right .calculator form .number-imperial-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.6rem;
+}
+.hero .hero-content .hero-right .calculator form .number-options label,
+.hero .hero-content .hero-right .calculator form .number-imperial-options label {
+  font-size: 1.4rem;
+  position: relative;
+}
+.hero .hero-content .hero-right .calculator form .number-options label span,
+.hero .hero-content .hero-right .calculator form .number-imperial-options label span {
+  position: absolute;
+  display: block;
+  z-index: 8;
+  top: 50%;
+  right: 2.4rem;
+}
+.hero .hero-content .hero-right .calculator form .number-options input[type=number],
+.hero .hero-content .hero-right .calculator form .number-imperial-options input[type=number] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  height: 6.9rem;
+  padding: 2rem 7.8rem 2rem 2.4rem;
+  border: 1px solid var(--borders);
+  border-radius: 12px;
+  margin-top: 0.8rem;
+  display: block;
+  cursor: pointer;
+}
+.hero .hero-content .hero-right .calculator form .number-options input[type=number]:hover, .hero .hero-content .hero-right .calculator form .number-options input[type=number]:active, .hero .hero-content .hero-right .calculator form .number-options input[type=number]:focus-visible,
+.hero .hero-content .hero-right .calculator form .number-imperial-options input[type=number]:hover,
+.hero .hero-content .hero-right .calculator form .number-imperial-options input[type=number]:active,
+.hero .hero-content .hero-right .calculator form .number-imperial-options input[type=number]:focus-visible {
+  border: 1px solid var(--blue);
+  outline: none;
+}
+.hero .hero-content .hero-right .calculator form .number-options input[type=number]::after,
+.hero .hero-content .hero-right .calculator form .number-imperial-options input[type=number]::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--blue);
+  display: block;
+}
+.hero .hero-content .hero-right .calculator form .number-imperial-options {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero .hero-content .hero-right .calculator form .number-imperial-options input[type=number] {
+  padding: 2rem 5.8rem 2rem 2.4rem;
 }
 
 .bmi-details {

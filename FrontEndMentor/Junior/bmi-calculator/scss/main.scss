@@ -51,6 +51,7 @@ body {
                 gap: 2.4rem;
 
                 position: absolute;
+                width: 100%;
                 height: 100%;
                 min-height: 64.9rem;
                 padding: 2.4rem;
@@ -125,6 +126,60 @@ body {
                                     border-radius: 50%;
                                     background-color: var(--blue);
                             }
+                        }
+                    }
+
+                    .number-options,
+                    .number-imperial-options {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.6rem;
+
+                        label {
+                            font-size: 1.4rem;
+                            position: relative;
+
+                            span {
+                                position: absolute;
+                                display: block;
+                                z-index: 8;
+                                top: 50%;
+                                right: 2.4rem;
+                            }
+                        }
+
+                        input[type="number"] {
+                            appearance: none;
+                            width: 100%;
+                            height: 6.9rem;
+                            padding: 2rem 7.8rem 2rem 2.4rem;
+                            border: 1px solid var(--borders);
+                            border-radius: 12px;
+                            margin-top: .8rem;
+                            display: block;
+                            cursor: pointer;
+
+                            &:hover,
+                            &:active,
+                            &:focus-visible {
+                                border: 1px solid var(--blue);
+                                outline: none;
+                            }
+
+                            &::after {
+                                content: "";
+                                width: 10px;
+                                height: 10px;
+                                background-color: var(--blue);
+                                display: block;
+                            }
+                        }
+                    }
+                    .number-imperial-options {
+                        flex-direction: row;
+                        justify-content: center;
+                        input[type="number"] {
+                            padding: 2rem 5.8rem 2rem 2.4rem ;
                         }
                     }
                 }

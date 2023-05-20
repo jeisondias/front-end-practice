@@ -42,10 +42,36 @@
             </fieldset>
             
             <fieldset class="number-options">  
-              <label for="height">Height</label>
-              <input type="number" name="height" id="height">
-              <label for="weight">Weight</label>
-              <input type="number" name="weight" id="weight">
+              <label for="height">Height</br>
+                <input type="number" name="height" id="height" min="0">
+                <span>cm</span>
+            </label>
+              <label for="weight">Weight</br>
+                <input type="number" name="weight" id="weight" min="0">
+                <span>kg</span>
+            </label>
+            </fieldset>
+
+            <fieldset class="number-imperial-options hide">  
+              <label for="height">Height</br>
+                <input type="number" name="height" id="height-imperial-fr" min="0">
+                <span>ft</span>
+              </label>
+              <label for="height"></br>
+                <input type="number" name="height" id="height-imperial-in" min="0">
+                <span>in</span>
+              </label>
+            </fieldset>
+
+            <fieldset class="number-imperial-options hide">  
+              <label for="weight">Weight</br>
+                <input type="number" name="weight" id="weight-imperial-st" min="0">
+                <span>st</span>
+              </label>
+              <label for="height" class="height"></br>
+                <input type="number" name="height" id="weight-imperial-lbs" min="0">
+                <span>lbs</span>
+              </label>
             </fieldset>
 
           </form>

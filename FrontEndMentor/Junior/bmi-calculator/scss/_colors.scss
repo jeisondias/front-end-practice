@@ -20,4 +20,12 @@ p {
 
 label {
     color: var(--titles);
+
+    span {
+        color: var(--blue)
+    }
+}
+
+input[type="number"] {
+    color: var(--titles);
 }
