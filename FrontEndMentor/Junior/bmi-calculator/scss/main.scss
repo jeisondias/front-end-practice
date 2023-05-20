@@ -60,6 +60,11 @@ body {
                 box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
                 border-radius: 16px;
 
+                @include responsive(tablet) {
+                    height: max-content;
+                    min-height: unset;
+                }
+
                 form {
                     display: flex;
                     flex-direction: column;
@@ -134,6 +139,10 @@ body {
                         flex-direction: column;
                         gap: 1.6rem;
 
+                        @include responsive(tablet) {
+                            flex-direction: row;
+                        }
+
                         label {
                             font-size: 1.4rem;
                             position: relative;
@@ -174,6 +183,7 @@ body {
                             }
                         }
                     }
+
                     .number-imperial-options {
                         flex-direction: row;
                         justify-content: center;
@@ -187,10 +197,21 @@ body {
                     padding: 3.2rem;
                     background: linear-gradient(90deg, #345FF7 0%, #587DFF 100%);
                     border-radius: 16px;
+
+                    @include responsive(tablet) {
+                        display: flex;
+                        align-items: center;
+                        gap: 19.2rem;
+                        border-radius: 16px 999px 999px 16px;
+                    }
                     
                     h1 {
                         margin-top: .8rem;
                         margin-bottom: 2.4rem;
+
+                        @include responsive(tablet) {
+                            margin-bottom: unset;
+                        }
                     }
                 }
             }
@@ -207,7 +228,7 @@ body {
 
     .bmi-details-right {
         padding: 0rem 1.9rem;
-        
+
         h2 {
             margin-bottom: 3.2rem;
         }

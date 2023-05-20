@@ -41,6 +41,10 @@ $container-xs: 375px;
     flex-direction: column;
     align-items: center;
     padding: 3.2rem 2.4rem 3.2rem;
+
+    @include responsive(tablet) {
+        padding: 3.2rem 4.3rem 2rem 3.9rem;
+    }
 }
 
 .hide {
