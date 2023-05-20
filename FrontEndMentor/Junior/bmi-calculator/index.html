@@ -27,14 +27,27 @@
         <div class="calculator">
           <h3>Enter your details below</h3>
           <form>
-            <label for="metric" class="bold">Metric</label>
-            <input type="radio" id="metric" name="metric" value="Metric">
-            <label for="imperial" class="bold">Imperial</label>
-            <input type="radio" id="imperial" name="imperial" value="Imperial">
-            <label for="height">Height</label>
-            <input type="number" name="height" id="height">
-            <label for="weight">Weight</label>
-            <input type="number" name="weight" id="weight">
+            <fieldset class="radio-options">
+              <label for="metric" class="bold radio-container">
+                <input type="radio" id="metric" name="radio" value="Metric">
+                <span class="checkmark"></span>
+                Metric
+              </label>
+
+              <label for="imperial" class="bold radio-container">
+                <input type="radio" id="imperial" name="radio" value="Imperial">
+                <span class="checkmark"></span>
+                Imperial
+              </label>
+            </fieldset>
+            
+            <fieldset class="number-options">  
+              <label for="height">Height</label>
+              <input type="number" name="height" id="height">
+              <label for="weight">Weight</label>
+              <input type="number" name="weight" id="weight">
+            </fieldset>
+
           </form>
           <div class="calculator-result">
             <div class="result-left">

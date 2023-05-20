@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -16,8 +18,13 @@ img {
      object-fit: cover;
 }
 
+fieldset {
+  border: none;
+}
+
 :root {
   --blue: hsl(227deg, 92%, 58%);
+  --radio-blue: hsla(227deg, 92%, 58%, 0.5);
   --text: hsl(215deg, 17%, 45%);
   --titles: hsl(215deg, 31%, 21%);
   --borders: hsl(200deg, 24%, 88%);
@@ -33,6 +40,10 @@ h4 {
 
 p {
   color: var(--text);
+}
+
+label {
+  color: var(--titles);
 }
 
 .container {
@@ -127,6 +138,7 @@ body {
 .hero {
   background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
   border-radius: 0px 0px 35px 35px;
+  min-height: 64rem;
 }
 .hero header {
   margin-bottom: 2.4rem;
@@ -152,6 +164,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 .hero .hero-content .hero-left {
   text-align: center;
@@ -159,4 +172,94 @@ body {
 }
 .hero .hero-content .hero-left h1 {
   margin-bottom: 2.4rem;
+}
+.hero .hero-content .hero-right {
+  position: inherit;
+}
+.hero .hero-content .hero-right .calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+  position: absolute;
+  height: 100%;
+  min-height: 64.9rem;
+  padding: 2.4rem;
+  background-color: var(--pure-white);
+  -webkit-box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+          box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+  border-radius: 16px;
+}
+.hero .hero-content .hero-right .calculator form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.hero .hero-content .hero-right .calculator form .radio-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4.6rem;
+}
+.hero .hero-content .hero-right .calculator form .radio-options .radio-container {
+  display: block;
+  position: relative;
+  padding-left: 4.7rem;
+  margin-bottom: 3.2rem;
+  min-height: 3.1rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hero .hero-content .hero-right .calculator form .radio-options .radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.hero .hero-content .hero-right .calculator form .radio-options .radio-container input:checked ~ .checkmark {
+  background-color: var(--radio-blue);
+  border: none;
+}
+.hero .hero-content .hero-right .calculator form .radio-options .radio-container input:checked ~ .checkmark::after {
+  display: block;
+}
+.hero .hero-content .hero-right .calculator form .radio-options .radio-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3.1rem;
+  width: 3.1rem;
+  border: 1px solid var(--borders);
+  border-radius: 50%;
+  margin-right: 1.8rem;
+}
+.hero .hero-content .hero-right .calculator form .radio-options .radio-container .checkmark:hover {
+  border: 1px solid var(--blue);
+}
+.hero .hero-content .hero-right .calculator form .radio-options .radio-container .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.hero .hero-content .hero-right .calculator form .radio-options .radio-container .checkmark::after {
+  top: 8px;
+  left: 8px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--blue);
+}
+
+.bmi-details {
+  margin-top: 72rem;
 }/*# sourceMappingURL=main.css.map */
