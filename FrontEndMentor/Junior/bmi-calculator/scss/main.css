@@ -9,6 +9,13 @@ html {
   font-size: 62.5%;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 :root {
   --blue: hsl(227deg, 92%, 58%);
   --text: hsl(215deg, 17%, 45%);
@@ -34,6 +41,20 @@ p {
   max-width: 1440px;
 }
 
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3.2rem 2.4rem 3.2rem;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
@@ -51,7 +72,7 @@ h1 {
 @media screen and (max-width: 540px) {
   h1 {
     font-size: 4.8rem;
-    line-height: 2.3rem;
+    line-height: 5.28rem;
   }
 }
 
@@ -101,4 +122,41 @@ label {
 
 body {
   background-color: var(--pure-white);
+}
+
+.hero {
+  background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+  border-radius: 0px 0px 35px 35px;
+}
+.hero header {
+  margin-bottom: 2.4rem;
+}
+.hero header img {
+  width: 40px;
+}
+@media screen and (min-width: 1440px) {
+  .hero header img {
+    width: 64px;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .hero header img {
+    width: 64px;
+  }
+}
+.hero .hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.hero .hero-content .hero-left {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.hero .hero-content .hero-left h1 {
+  margin-bottom: 2.4rem;
 }/*# sourceMappingURL=main.css.map */

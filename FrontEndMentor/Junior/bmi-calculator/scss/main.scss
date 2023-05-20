@@ -7,3 +7,37 @@
 body {
     background-color: var(--pure-white);
 }
+
+.hero {
+    background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+    border-radius: 0px 0px 35px 35px;
+
+    header {
+        margin-bottom: 2.4rem;
+        img {
+            width: 40px;
+
+            @include responsive(PCH) {
+                width: 64px;
+            }
+
+            @include responsive(PC) {
+                width: 64px;
+            }
+        }
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+
+        .hero-left {
+            text-align: center;
+            margin-bottom: 4.8rem;
+
+            h1 {
+                margin-bottom: 2.4rem;
+            }
+        }
+    }
+}
