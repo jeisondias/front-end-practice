@@ -22,6 +22,10 @@ fieldset {
   border: none;
 }
 
+ul {
+  list-style: none;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -63,6 +67,11 @@ input[type=number] {
   color: var(--titles);
 }
 
+.calculator-result p,
+.calculator h1 {
+  color: var(--pure-white);
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -85,6 +94,12 @@ input[type=number] {
 
 .hide {
   display: none !important;
+}
+
+.flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 body {
@@ -117,7 +132,7 @@ h2 {
 @media screen and (max-width: 540px) {
   h2 {
     font-size: 3.2rem;
-    line-height: 2rem;
+    line-height: 3.52rem;
   }
 }
 
@@ -164,6 +179,11 @@ input[type=number] {
   line-height: 110%;
   letter-spacing: -0.05em;
   letter-spacing: -0.05rem;
+}
+
+.result-right p {
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 body {
@@ -360,7 +380,43 @@ body {
 .hero .hero-content .hero-right .calculator form .number-imperial-options input[type=number] {
   padding: 2rem 5.8rem 2rem 2.4rem;
 }
+.hero .hero-content .hero-right .calculator .calculator-result {
+  padding: 3.2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#345FF7), to(#587DFF));
+  background: linear-gradient(90deg, #345FF7 0%, #587DFF 100%);
+  border-radius: 16px;
+}
+.hero .hero-content .hero-right .calculator .calculator-result h1 {
+  margin-top: 0.8rem;
+  margin-bottom: 2.4rem;
+}
 
 .bmi-details {
-  margin-top: 72rem;
+  margin-top: 56rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4.8rem;
+}
+.bmi-details .bmi-details-right h2 {
+  margin-bottom: 3.2rem;
+}
+
+.tips {
+  background: linear-gradient(290.1deg, #fdfffe 0%, #f7faff 100%);
+  padding: 5.6rem 2.2rem 5.6rem 1.904rem;
+  margin-top: 7.61rem;
+}
+.tips ul li {
+  margin-bottom: 4rem;
+}
+.tips ul li img {
+  margin-bottom: 3.2rem;
+}
+.tips ul li h3 {
+  margin-bottom: 2.4rem;
 }/*# sourceMappingURL=main.css.map */

@@ -29,3 +29,8 @@ label {
 input[type="number"] {
     color: var(--titles);
 }
+
+.calculator-result p,
+.calculator h1{
+    color: var(--pure-white);
+}
