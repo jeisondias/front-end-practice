@@ -294,10 +294,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 4.6rem;
 }
 .hero .hero-content .hero-right .calculator form .radio-options .radio-container {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   padding-left: 4.7rem;
   margin-bottom: 3.2rem;
@@ -307,6 +308,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width: 50%;
 }
 .hero .hero-content .hero-right .calculator form .radio-options .radio-container input {
   position: absolute;

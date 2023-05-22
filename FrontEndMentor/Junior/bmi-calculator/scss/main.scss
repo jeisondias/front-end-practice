@@ -81,10 +81,9 @@ body {
 
                     .radio-options {
                         display: flex;
-                        gap: 4.6rem;
 
                         .radio-container {
-                            display: block;
+                            display: flex;
                             position: relative;
                             padding-left: 4.7rem;
                             margin-bottom: 3.2rem;
@@ -94,6 +93,7 @@ body {
                             -moz-user-select: none;
                             -ms-user-select: none;
                             user-select: none;
+                            width: 50%;
 
                             input {
                                 position: absolute;
