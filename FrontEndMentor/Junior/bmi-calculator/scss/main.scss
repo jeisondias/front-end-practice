@@ -65,6 +65,16 @@ body {
                     min-height: unset;
                 }
 
+                @include responsive(PC) {
+                    height: max-content;
+                    min-height: unset;
+                }
+
+                @include responsive(PCH) {
+                    height: max-content;
+                    min-height: unset;
+                }
+
                 form {
                     display: flex;
                     flex-direction: column;
@@ -140,6 +150,14 @@ body {
                         gap: 1.6rem;
 
                         @include responsive(tablet) {
+                            flex-direction: row;
+                        }
+
+                        @include responsive(PC) {
+                            flex-direction: row;
+                        }
+
+                        @include responsive(PCH) {
                             flex-direction: row;
                         }
 
@@ -220,16 +238,48 @@ body {
 }
 
 .bmi-details {
-    margin-top: 56rem;
-
     display: flex;
     flex-direction: column;
     gap: 4.8rem;
 
+    position: relative;
+    margin-top: 56rem;
+    
+    @include responsive(tablet) {
+        flex-direction: row;
+        margin-top: 40rem;
+        gap: 2rem;
+    }
+
+    .bmi-details-left {
+        @include responsive(tablet) {
+            position: relative;
+            left: -8rem;
+            flex: 1 2 32.9rem;
+        }
+
+        img {
+            @include responsive(tablet) {
+                width: 435px; 
+            }
+        }
+    }
+
     .bmi-details-right {
         padding: 0rem 1.9rem;
 
+        @include responsive(tablet) {
+            display: flex;
+            flex-direction: column;
+            flex: 2 1 31rem;
+            padding-left: 0;
+            padding-right: 4.3rem;
+        }
+
         h2 {
+            @include responsive(tablet) {
+                font-size: 3.2rem;
+            }
             margin-bottom: 3.2rem;
         }
     }

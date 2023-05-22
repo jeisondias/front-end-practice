@@ -265,6 +265,22 @@ body {
     min-height: unset;
   }
 }
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .hero .hero-content .hero-right .calculator {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    min-height: unset;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero .hero-content .hero-right .calculator {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    min-height: unset;
+  }
+}
 .hero .hero-content .hero-right .calculator form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -342,6 +358,24 @@ body {
   gap: 1.6rem;
 }
 @media screen and (max-width: 1140px) and (min-width: 768px) {
+  .hero .hero-content .hero-right .calculator form .number-options,
+  .hero .hero-content .hero-right .calculator form .number-imperial-options {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .hero .hero-content .hero-right .calculator form .number-options,
+  .hero .hero-content .hero-right .calculator form .number-imperial-options {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media screen and (min-width: 1440px) {
   .hero .hero-content .hero-right .calculator form .number-options,
   .hero .hero-content .hero-right .calculator form .number-imperial-options {
     -webkit-box-orient: horizontal;
@@ -433,7 +467,6 @@ body {
 }
 
 .bmi-details {
-  margin-top: 56rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,12 +475,59 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 4.8rem;
+  position: relative;
+  margin-top: 56rem;
+}
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .bmi-details {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 40rem;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .bmi-details .bmi-details-left {
+    position: relative;
+    left: -8rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 2 32.9rem;
+            flex: 1 2 32.9rem;
+  }
+}
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .bmi-details .bmi-details-left img {
+    width: 435px;
+  }
 }
 .bmi-details .bmi-details-right {
   padding: 0rem 1.9rem;
 }
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .bmi-details .bmi-details-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 31rem;
+            flex: 2 1 31rem;
+    padding-left: 0;
+    padding-right: 4.3rem;
+  }
+}
 .bmi-details .bmi-details-right h2 {
   margin-bottom: 3.2rem;
+}
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .bmi-details .bmi-details-right h2 {
+    font-size: 3.2rem;
+  }
 }
 
 .tips {
