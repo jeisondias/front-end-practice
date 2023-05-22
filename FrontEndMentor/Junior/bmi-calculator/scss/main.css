@@ -474,6 +474,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 4.8rem;
   position: relative;
   margin-top: 56rem;
@@ -538,6 +541,14 @@ body {
 .tips ul li {
   margin-bottom: 4rem;
 }
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .tips ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 4rem;
+  }
+}
 .tips ul li img {
   margin-bottom: 3.2rem;
 }
@@ -545,6 +556,11 @@ body {
   margin-bottom: 2.4rem;
 }
 
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .limitations {
+    margin-top: 9.6rem;
+  }
+}
 .limitations .limitations-right {
   text-align: center;
   padding: 0 2.9rem 0 1.9rem;
@@ -557,6 +573,22 @@ body {
 }
 .limitations .limitations-left {
   padding: 1rem 2.8rem 8rem 1.9rem;
+}
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .limitations .limitations-left ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 1.5rem;
+       -moz-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+    row-gap: 2.4rem;
+  }
 }
 .limitations .limitations-left ul li {
   display: -webkit-box;
@@ -573,6 +605,13 @@ body {
   -webkit-box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
           box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
   border-radius: 1.6rem;
+}
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .limitations .limitations-left ul li {
+    -ms-flex-preferred-size: 33.5rem;
+        flex-basis: 33.5rem;
+    margin-bottom: unset;
+  }
 }
 .limitations .limitations-left ul li header {
   display: -webkit-box;
