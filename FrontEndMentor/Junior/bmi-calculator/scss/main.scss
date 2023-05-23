@@ -13,8 +13,32 @@ body {
     border-radius: 0px 0px 35px 35px;
     min-height: 64rem;
 
+    @include responsive(PC) {
+        width: 95%;
+        min-height: 75rem;
+    }
+
+    @include responsive(PCH) {
+        max-width: 97.8rem;
+        margin-left: 2.4rem;
+        min-height: 75rem;
+    }
+
     header {
         margin-bottom: 2.4rem;
+
+        @include responsive(tablet) {
+            margin-bottom: 4rem;
+        }
+
+        @include responsive(PC) {
+            margin-bottom: 12.7rem;
+        }
+
+        @include responsive(PCH) {
+            margin-bottom: 13.1rem;
+        }
+
         img {
             width: 40px;
 
@@ -33,9 +57,36 @@ body {
         flex-direction: column;
         position: relative;
 
+        @include responsive(PC) {
+            flex-direction: row;
+            gap: 3.2rem;
+        }
+
+        @include responsive(PCH) {
+            flex-direction: row;
+            gap: 3.2rem;
+        }
+
         .hero-left {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             text-align: center;
             margin-bottom: 4.8rem;
+
+            @include responsive(PC) {
+                align-items: flex-start;
+                flex-basis: 61.2rem;
+                text-align: left;
+                padding-right: 11.9rem;
+            }
+            
+            @include responsive(PCH) {
+                align-items: flex-start;
+                flex-basis: 61.2rem;
+                text-align: left;
+                padding-right: 11.9rem;
+            }
 
             h1 {
                 margin-bottom: 2.4rem;
@@ -66,13 +117,18 @@ body {
                 }
 
                 @include responsive(PC) {
+                    min-width: 45.7rem;
+                    max-width: 56.4rem;
                     height: max-content;
                     min-height: unset;
+                    margin-top: 8.4rem;
                 }
 
                 @include responsive(PCH) {
+                    width: 56.4rem;
                     height: max-content;
                     min-height: unset;
+                    margin-top: 12rem;
                 }
 
                 form {
@@ -222,12 +278,34 @@ body {
                         gap: 19.2rem;
                         border-radius: 16px 999px 999px 16px;
                     }
+
+                    @include responsive(PC) {
+                        display: flex;
+                        align-items: center;
+                        gap: 2.4rem;
+                        border-radius: 16px 999px 999px 16px;
+                    }
                     
+                    @include responsive(PCH) {
+                        display: flex;
+                        align-items: center;
+                        gap: 2.4rem;
+                        border-radius: 16px 999px 999px 16px;
+                    }
+
                     h1 {
                         margin-top: .8rem;
                         margin-bottom: 2.4rem;
 
                         @include responsive(tablet) {
+                            margin-bottom: unset;
+                        }
+
+                        @include responsive(PC) {
+                            margin-bottom: unset;
+                        }
+
+                        @include responsive(PCH) {
                             margin-bottom: unset;
                         }
                     }

@@ -98,6 +98,16 @@ input[type=number] {
     padding: 3.2rem 4.3rem 2rem 3.9rem;
   }
 }
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .hero {
+    padding: 7.5rem 4.3rem 2rem 3.9rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding: 7.5rem 4.3rem 20rem 11.6rem;
+  }
+}
 
 .hide {
   display: none !important;
@@ -202,8 +212,36 @@ body {
   border-radius: 0px 0px 35px 35px;
   min-height: 64rem;
 }
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .hero {
+    width: 95%;
+    min-height: 75rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    max-width: 97.8rem;
+    margin-left: 2.4rem;
+    min-height: 75rem;
+  }
+}
 .hero header {
   margin-bottom: 2.4rem;
+}
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .hero header {
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .hero header {
+    margin-bottom: 12.7rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero header {
+    margin-bottom: 13.1rem;
+  }
 }
 .hero header img {
   width: 40px;
@@ -228,9 +266,59 @@ body {
           flex-direction: column;
   position: relative;
 }
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .hero .hero-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 3.2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero .hero-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 3.2rem;
+  }
+}
 .hero .hero-content .hero-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   margin-bottom: 4.8rem;
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .hero .hero-content .hero-left {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-preferred-size: 61.2rem;
+        flex-basis: 61.2rem;
+    text-align: left;
+    padding-right: 11.9rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero .hero-content .hero-left {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-preferred-size: 61.2rem;
+        flex-basis: 61.2rem;
+    text-align: left;
+    padding-right: 11.9rem;
+  }
 }
 .hero .hero-content .hero-left h1 {
   margin-bottom: 2.4rem;
@@ -267,18 +355,23 @@ body {
 }
 @media screen and (max-width: 1440px) and (min-width: 1140px) {
   .hero .hero-content .hero-right .calculator {
+    min-width: 45.7rem;
+    max-width: 56.4rem;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     min-height: unset;
+    margin-top: 8.4rem;
   }
 }
 @media screen and (min-width: 1440px) {
   .hero .hero-content .hero-right .calculator {
+    width: 56.4rem;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     min-height: unset;
+    margin-top: 12rem;
   }
 }
 .hero .hero-content .hero-right .calculator form {
@@ -458,11 +551,45 @@ body {
     border-radius: 16px 999px 999px 16px;
   }
 }
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .hero .hero-content .hero-right .calculator .calculator-result {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2.4rem;
+    border-radius: 16px 999px 999px 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero .hero-content .hero-right .calculator .calculator-result {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2.4rem;
+    border-radius: 16px 999px 999px 16px;
+  }
+}
 .hero .hero-content .hero-right .calculator .calculator-result h1 {
   margin-top: 0.8rem;
   margin-bottom: 2.4rem;
 }
 @media screen and (max-width: 1140px) and (min-width: 768px) {
+  .hero .hero-content .hero-right .calculator .calculator-result h1 {
+    margin-bottom: unset;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .hero .hero-content .hero-right .calculator .calculator-result h1 {
+    margin-bottom: unset;
+  }
+}
+@media screen and (min-width: 1440px) {
   .hero .hero-content .hero-right .calculator .calculator-result h1 {
     margin-bottom: unset;
   }

@@ -45,6 +45,14 @@ $container-xs: 375px;
     @include responsive(tablet) {
         padding: 3.2rem 4.3rem 2rem 3.9rem;
     }
+
+    @include responsive(PC) {
+        padding: 7.5rem 4.3rem 2rem 3.9rem;
+    }
+
+    @include responsive(PCH) {
+        padding: 7.5rem 4.3rem 20rem 11.6rem;
+    }
 }
 
 .hide {
