@@ -432,6 +432,36 @@ body {
     padding: 5.6rem 2.2rem 5.6rem 1.904rem;
     margin-top: 7.61rem;
 
+    @include responsive(PC) {
+        margin-top: 9.6rem;
+        margin-bottom: 12rem;
+        padding: 7.2rem 11.7rem 6.6rem 11.6rem;
+        border-radius: 3.5rem;
+        background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+    }
+    
+    
+    @include responsive(PCH) {
+        margin-top: 9.6rem;
+        margin-bottom: 12rem;
+        padding: 7.2rem 11.7rem 6.6rem 11.6rem;
+        border-radius: 3.5rem;
+        background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+    }
+
+    ul {
+        @include responsive(PC) {
+            display: flex;            
+            gap: 3.2rem;
+        }
+        
+        
+        @include responsive(PCH) {
+            display: flex;
+            gap: 3.2rem;
+        }
+    }
+
     ul li {
         margin-bottom: 4rem;
 
@@ -442,6 +472,15 @@ body {
 
         img {
             margin-bottom: 3.2rem;
+
+            @include responsive(PC) {
+                margin-bottom: 4.5rem;
+            }
+            
+            
+            @include responsive(PCH) {
+                margin-bottom: 4.5rem;
+            }
         }
 
         h3 {
