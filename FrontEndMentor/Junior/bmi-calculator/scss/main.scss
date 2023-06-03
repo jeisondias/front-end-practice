@@ -9,19 +9,39 @@ body {
 }
 
 .hero {
-    background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
-    border-radius: 0px 0px 35px 35px;
+    position: relative;
     min-height: 64rem;
 
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        top: 0;
+        
+        min-height: 100%;
+        background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+        border-radius: 0px 0px 35px 35px;
+    }
+
     @include responsive(PC) {
-        width: 95%;
+        background: unset;
+        border-radius: unset;
         min-height: 75rem;
+
+        &::before {
+            left: 2.4rem;
+            width: 100%;
+        }
     }
 
     @include responsive(PCH) {
-        max-width: 97.8rem;
-        margin-left: 2.4rem;
+        background: unset;
         min-height: 75rem;
+
+        &::before {
+            left: 2.4rem;
+            width: 69%;
+        }
     }
 
     header {
