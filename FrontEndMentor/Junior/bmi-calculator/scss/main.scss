@@ -21,6 +21,7 @@ body {
         min-height: 100%;
         background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
         border-radius: 0px 0px 35px 35px;
+        overflow: hidden;
     }
 
     @include responsive(PC) {
@@ -30,7 +31,7 @@ body {
 
         &::before {
             left: 2.4rem;
-            width: 100%;
+            width: 98%;
         }
     }
 
@@ -350,6 +351,20 @@ body {
         gap: 2rem;
     }
 
+    @include responsive(PC) {
+        flex-direction: row;
+        margin-top: 6.5rem;
+        padding: 0 8rem;
+        gap: 8rem;
+    }
+
+    @include responsive(PCH) {
+        flex-direction: row;
+        margin-top: 6.5rem;
+        padding: 0 14rem;
+        gap: 12rem;
+    }
+
     .bmi-details-left {
         @include responsive(tablet) {
             position: relative;
@@ -360,6 +375,14 @@ body {
         img {
             @include responsive(tablet) {
                 width: 435px; 
+            }
+
+            @include responsive(PC) {
+                max-width: 564px;
+            }
+            
+            @include responsive(PCH) {
+                max-width: 564px;
             }
         }
     }
@@ -375,11 +398,31 @@ body {
             padding-right: 4.3rem;
         }
 
+        @include responsive(PC) {
+            padding: unset;
+        }
+        
+        
+        @include responsive(PCH) {
+            padding: unset;
+        }
+
         h2 {
+            margin-bottom: 3.2rem;
+
             @include responsive(tablet) {
                 font-size: 3.2rem;
             }
-            margin-bottom: 3.2rem;
+               
+            @include responsive(PC) {
+                margin-top: 18.4rem;
+                margin-bottom: 3.5rem;
+            }
+            
+            @include responsive(PCH) {
+                margin-top: 18.4rem;
+                margin-bottom: 3.5rem;
+            }
         }
     }
 }

@@ -219,6 +219,7 @@ body {
   min-height: 100%;
   background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
   border-radius: 0px 0px 35px 35px;
+  overflow: hidden;
 }
 @media screen and (max-width: 1440px) and (min-width: 1140px) {
   .hero {
@@ -228,7 +229,7 @@ body {
   }
   .hero::before {
     left: 2.4rem;
-    width: 100%;
+    width: 98%;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -636,6 +637,28 @@ body {
     gap: 2rem;
   }
 }
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .bmi-details {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 6.5rem;
+    padding: 0 8rem;
+    gap: 8rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .bmi-details {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 6.5rem;
+    padding: 0 14rem;
+    gap: 12rem;
+  }
+}
 @media screen and (max-width: 1140px) and (min-width: 768px) {
   .bmi-details .bmi-details-left {
     position: relative;
@@ -648,6 +671,16 @@ body {
 @media screen and (max-width: 1140px) and (min-width: 768px) {
   .bmi-details .bmi-details-left img {
     width: 435px;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .bmi-details .bmi-details-left img {
+    max-width: 564px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .bmi-details .bmi-details-left img {
+    max-width: 564px;
   }
 }
 .bmi-details .bmi-details-right {
@@ -669,12 +702,34 @@ body {
     padding-right: 4.3rem;
   }
 }
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .bmi-details .bmi-details-right {
+    padding: unset;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .bmi-details .bmi-details-right {
+    padding: unset;
+  }
+}
 .bmi-details .bmi-details-right h2 {
   margin-bottom: 3.2rem;
 }
 @media screen and (max-width: 1140px) and (min-width: 768px) {
   .bmi-details .bmi-details-right h2 {
     font-size: 3.2rem;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .bmi-details .bmi-details-right h2 {
+    margin-top: 18.4rem;
+    margin-bottom: 3.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .bmi-details .bmi-details-right h2 {
+    margin-top: 18.4rem;
+    margin-bottom: 3.5rem;
   }
 }
 
