@@ -31,7 +31,7 @@ body {
 
         &::before {
             left: 2.4rem;
-            width: 98%;
+            width: 97.8rem;
         }
     }
 
@@ -41,7 +41,7 @@ body {
 
         &::before {
             left: 2.4rem;
-            width: 69%;
+            width: 97.8rem;
         }
     }
 
@@ -389,6 +389,13 @@ body {
 
     .bmi-details-right {
         padding: 0rem 1.9rem;
+        position: relative;
+
+        .curved-line-1 {
+            position: absolute;
+            top: -3.2rem;
+            right: 2.8rem;
+        }
 
         @include responsive(tablet) {
             display: flex;
@@ -539,11 +546,17 @@ body {
 
     .limitations-right {
         padding: 1rem 2.8rem 8rem 1.9rem;
+        position: relative;
+
+        .curved-line-2 {
+            position: absolute;
+            top: 25rem;
+        }
 
         @include responsive(PCH) {
             position: absolute;
             max-width: 96.1rem;
-            right: 0;
+            right: 5rem;
             z-index: -1;
         }
 

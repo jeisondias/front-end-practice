@@ -62,3 +62,15 @@ $container-xs: 375px;
 .flex {
     display: flex !important; 
 }
+
+.show-desktop {
+    display: none;
+
+    @include responsive(PC) {
+        display: block;
+    }
+
+    @include responsive(PCH) {
+        display: block;
+    }
+}

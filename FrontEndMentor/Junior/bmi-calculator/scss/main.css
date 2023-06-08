@@ -119,6 +119,20 @@ input[type=number] {
   display: flex !important;
 }
 
+.show-desktop {
+  display: none;
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .show-desktop {
+    display: block;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .show-desktop {
+    display: block;
+  }
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
@@ -229,7 +243,7 @@ body {
   }
   .hero::before {
     left: 2.4rem;
-    width: 98%;
+    width: 97.8rem;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -239,7 +253,7 @@ body {
   }
   .hero::before {
     left: 2.4rem;
-    width: 69%;
+    width: 97.8rem;
   }
 }
 .hero header {
@@ -685,6 +699,12 @@ body {
 }
 .bmi-details .bmi-details-right {
   padding: 0rem 1.9rem;
+  position: relative;
+}
+.bmi-details .bmi-details-right .curved-line-1 {
+  position: absolute;
+  top: -3.2rem;
+  right: 2.8rem;
 }
 @media screen and (max-width: 1140px) and (min-width: 768px) {
   .bmi-details .bmi-details-right {
@@ -853,12 +873,17 @@ body {
 }
 .limitations .limitations-right {
   padding: 1rem 2.8rem 8rem 1.9rem;
+  position: relative;
+}
+.limitations .limitations-right .curved-line-2 {
+  position: absolute;
+  top: 25rem;
 }
 @media screen and (min-width: 1440px) {
   .limitations .limitations-right {
     position: absolute;
     max-width: 96.1rem;
-    right: 0;
+    right: 5rem;
     z-index: -1;
   }
 }
