@@ -386,7 +386,7 @@ body {
 }
 @media screen and (max-width: 1440px) and (min-width: 1140px) {
   .hero .hero-content .hero-right .calculator {
-    min-width: 45.7rem;
+    min-width: 43.7rem;
     max-width: 56.4rem;
     height: -webkit-max-content;
     height: -moz-max-content;
