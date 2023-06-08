@@ -805,21 +805,74 @@ body {
     margin-top: 9.6rem;
   }
 }
-.limitations .limitations-right {
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .limitations {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .limitations {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.limitations .limitations-left {
   text-align: center;
   padding: 0 2.9rem 0 1.9rem;
 }
-.limitations .limitations-right h2 {
+.limitations .limitations-left h2 {
   margin-bottom: 3.2rem;
 }
-.limitations .limitations-right p {
+.limitations .limitations-left p {
   margin-bottom: 5.6rem;
 }
-.limitations .limitations-left {
+@media screen and (min-width: 1440px) {
+  .limitations .limitations-left {
+    position: absolute;
+    text-align: left;
+    left: 0;
+    margin-left: 12rem;
+    max-width: 56.4rem;
+    padding: 0 1rem 0 1.9rem;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .limitations .limitations-left {
+    position: absolute;
+    text-align: left;
+    left: 0;
+    margin-left: 12rem;
+    max-width: 46.4rem;
+    padding: 0 1rem 0 1.9rem;
+  }
+}
+.limitations .limitations-right {
   padding: 1rem 2.8rem 8rem 1.9rem;
 }
+@media screen and (min-width: 1440px) {
+  .limitations .limitations-right {
+    position: absolute;
+    max-width: 96.1rem;
+    right: 0;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .limitations .limitations-right {
+    position: absolute;
+    max-width: 96.1rem;
+    right: 0;
+    z-index: -1;
+    padding: 1rem 1rem 8rem 1.9rem;
+  }
+}
 @media screen and (max-width: 1140px) and (min-width: 768px) {
-  .limitations .limitations-left ul {
+  .limitations .limitations-right ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -834,7 +887,29 @@ body {
     row-gap: 2.4rem;
   }
 }
-.limitations .limitations-left ul li {
+@media screen and (min-width: 1440px) {
+  .limitations .limitations-right ul {
+    display: grid;
+    grid-template-columns: repeat(5, 16rem);
+    grid-template-rows: 1fr 18.4rem 1fr;
+    -webkit-column-gap: 3.2rem;
+       -moz-column-gap: 3.2rem;
+            column-gap: 3.2rem;
+    row-gap: 2.8rem;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .limitations .limitations-right ul {
+    display: grid;
+    grid-template-columns: repeat(5, 16rem);
+    grid-template-rows: 1fr 18.4rem 1fr;
+    -webkit-column-gap: 3.2rem;
+       -moz-column-gap: 3.2rem;
+            column-gap: 3.2rem;
+    row-gap: 2.8rem;
+  }
+}
+.limitations .limitations-right ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -851,13 +926,13 @@ body {
   border-radius: 1.6rem;
 }
 @media screen and (max-width: 1140px) and (min-width: 768px) {
-  .limitations .limitations-left ul li {
+  .limitations .limitations-right ul li {
     -ms-flex-preferred-size: 33.5rem;
         flex-basis: 33.5rem;
     margin-bottom: unset;
   }
 }
-.limitations .limitations-left ul li header {
+.limitations .limitations-right ul li header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -865,4 +940,23 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.6rem;
+}
+.limitations .limitations-right ul li:nth-child(1) {
+  grid-column: 3/span 2;
+}
+.limitations .limitations-right ul li:nth-child(2) {
+  grid-column: 2/span 2;
+  grid-row: 2;
+}
+.limitations .limitations-right ul li:nth-child(3) {
+  grid-column: 4/span 2;
+  grid-row: 2;
+}
+.limitations .limitations-right ul li:nth-child(4) {
+  grid-column: 1/span 2;
+  grid-row: 3;
+}
+.limitations .limitations-right ul li:nth-child(5) {
+  grid-column: 3/span 2;
+  grid-row: 3;
 }/*# sourceMappingURL=main.css.map */
