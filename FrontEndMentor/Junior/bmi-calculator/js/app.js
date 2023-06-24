@@ -18,6 +18,7 @@ const weightInfo = document.querySelector('.weight-info');
 const welcomeMessage = document.querySelector('.welcome-result');
 const resultLeft = document.querySelector('.result-left');
 const resultRight = document.querySelector('.result-right');
+let idealWeightM = "";
 
 
 // Imperial variables
@@ -45,12 +46,14 @@ function calculateMetric() {
     metricHeight.addEventListener('input', function () {
         metricHeightValue = Number(metricHeight.value);
         calculateBMIMetric();
+        idealWeightMetric();
         displayBMIMetric();
     });
 
     metricWeight.addEventListener('input', function () {
         metricWeightValue = Number(metricWeight.value);
         calculateBMIMetric();
+        idealWeightMetric();
         displayBMIMetric();
     });
 }
@@ -64,33 +67,39 @@ function calculateBMIMetric() {
 }
 
 function displayBMIMetric(){
-    if(resultMetric <= 0 && resultMetric <= 18.5) {
+    if(resultMetric <= 18.5) {
         welcomeMessage.classList.add('hide');
         resultLeft.classList.remove('hide');
         resultRight.classList.remove('hide');
         bmiResult.innerHTML = resultMetric.toFixed(1);
         weightInfo.innerHTML = 
-        `Your BMI suggests you’re underweight. Your ideal weight is between <span class="bold ">63.3kgs - 85.2kgs.</span>`;
+        `Your BMI suggests you’re underweight. Your ideal weight is between <span class="bold ">${idealWeightMetric()}.</span>`;
     } else if(resultMetric > 18.5 && resultMetric <= 24.9) {
         welcomeMessage.classList.add('hide');
         resultLeft.classList.remove('hide');
         resultRight.classList.remove('hide');
         bmiResult.innerHTML = resultMetric.toFixed(1);
         weightInfo.innerHTML = 
-        `Your BMI suggests you’re a heatlhy weight. Your ideal weight is between <span class="bold ">63.3kgs - 85.2kgs.</span>`;
+        `Your BMI suggests you’re a heatlhy weight. Your ideal weight is between <span class="bold ">${idealWeightMetric()}.</span>`;
     } else if(resultMetric > 24.9 && resultMetric <= 29.9) {
         welcomeMessage.classList.add('hide');
         resultLeft.classList.remove('hide');
         resultRight.classList.remove('hide');
         bmiResult.innerHTML = resultMetric.toFixed(1);
         weightInfo.innerHTML = 
-        `Your BMI suggests you’re overweight. Your ideal weight is between <span class="bold ">63.3kgs - 85.2kgs.</span>`;
+        `Your BMI suggests you’re overweight. Your ideal weight is between <span class="bold ">${idealWeightMetric()}.</span>`;
     } else if(resultMetric > 29.9) {
         welcomeMessage.classList.add('hide');
         resultLeft.classList.remove('hide');
         resultRight.classList.remove('hide');
         bmiResult.innerHTML = resultMetric.toFixed(1);
         weightInfo.innerHTML = 
-        `Your BMI suggests you’re obese. Your ideal weight is between <span class="bold ">63.3kgs - 85.2kgs.</span>`;
+        `Your BMI suggests you’re obese. Your ideal weight is between <span class="bold ">${idealWeightMetric()}.</span>`;
     }
+}
+
+function idealWeightMetric() {
+    let minWeight = 18.5 * (metricHeightValue/100 * metricHeightValue/100);
+    let maxWeight = 24.9 * (metricHeightValue/100 * metricHeightValue/100);
+    return `${minWeight.toFixed(1)}kgs - ${maxWeight.toFixed(1)}kgs`;
 }
